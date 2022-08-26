@@ -1,0 +1,1878 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <!--Favicon-->
+  <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+  <!-- Font awesome 5 -->
+  <link href="css/all.min.css" rel="stylesheet" />
+  <!-- Bootstrap4 -->
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
+  <!--  Slick-slider-->
+  <link href="css/slick.css" rel="stylesheet" />
+  <link href="css/slick-theme.css" rel="stylesheet" />
+  <!--Swiper-->
+  <link href="css/swiper-bundle.min.css" rel="stylesheet" />
+  <!--Fancyapp-->
+  <link href="css/fancybox.min.css" rel="stylesheet" />
+  <!-- Main css -->
+  <link href="css/main.css" rel="stylesheet" />
+  <title>MirSavdo.uz</title>
+</head>
+
+<body class="product-more-page">
+
+  <!-- Header-open -->
+  <header>
+    <div class="container">
+      <div class="auto-content">
+        <nav class="navbar navbar-expand-sm bg-light">
+          <!-- logo-open -->
+          <div class="prev-box">
+            <a class="navbar-brand logo" href="index.html">
+              <img src="img/logo.png"  alt="Logo">
+            </a>
+            <button class="btn history-prev">
+              <i class="fal fa-angle-left fa-2x"></i>
+            </button>
+          </div>
+          <!-- logo-close -->
+          <h3 class="mobile-title ml-auto">Asosiy</h3>
+          <a class="btn btn-warning categore-btn mr-md-3" data-target="#categore-modal" data-toggle="modal"
+            href="#categore">
+            <i class="fas fa-bars"></i>
+            <span class="btn-text"> Katalok </span>
+          </a>
+          <div class="input-group" id="search-input">
+            <!-- input search -->
+            <input class="form-control border-warning" placeholder="Nima izlaymiz" type="text" />
+            <div class="input-group-append">
+              <button class="btn btn-warning" type="button">
+                <i class="fal fa-search"></i>
+                <span class="btn-text"> Qidirish </span>
+              </button>
+            </div>
+          </div>
+          <!-- navbar-nav-open -->
+          <ul class="navbar-nav">
+            <li class="nav-item search-btn">
+              <button class="btn nav-link" href="#" id="search-btn">
+                <i class="fal fa-search"></i>
+                <span class="btn-text"> Qidirish </span>
+              </button>
+            </li>
+            <li class="nav-item home-btn">
+              <a class="nav-link active" href="#">
+                <i class="fal fa-home"></i>
+                <span class="btn-text"> Home </span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link bookmark-basket" href="profile/selected-product.html">
+                <i class="fal fa-bookmark"></i>
+                <span class="badge badge-pill count"> 0 </span>
+                <span class="btn-text"> Tanlangan </span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link select-basket" href="profile/heart.html">
+                <i class="fal fa-heart"></i>
+                <span class="badge badge-pill count"> 0 </span>
+                <span class="btn-text"> Sevimli </span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <div class="dropdown">
+                <a href="#" class="nav-link" type="button dropdown-toggle" data-toggle="dropdown">
+                  <i class="fal fa-user"></i>
+                  <span class="btn-text"> Kirish </span>
+                </a>
+                <div class="dropdown-menu">
+                  <a href="profile/index.html" class="dropdown-item"><i class="fal fa-user"></i>&nbsp;Profil</a>
+                  <a href="register.html" class="dropdown-item"><i class="fal fa-user-plus"></i>&nbsp;Ro'yxatdan
+                    o'tish</a>
+                  <a href="admin/index.html" class="dropdown-item"><span class="fal fa-users"></span>&nbsp;Admin
+                    uchun</a>
+                  <a href="profile/settings.html" class="dropdown-item"><span
+                      class="fal fa-cog"></span>&nbsp;Sozlamalar</a>
+                </div>
+                <div class="drop-overlay"></div>
+              </div>
+            </li>
+          </ul>
+          <!-- navbar-nav-close -->
+        </nav>
+      </div>
+      <!-- Large-menu-open -->
+      <div class="large-menu">
+        <div class="large-menu-inner">
+          <aside>
+            <ul class="nav nav-pills">
+              <li class="nav-item">
+                <a class="categore-navbar--link active show" data-toggle="pill" href="#categore_1">
+                  Smartfon, telifon, gadjet, aksessuarlar
+                  <i class="fas fa-angle-right"></i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="categore-navbar--link" data-toggle="pill" href="#categore_2">
+                  Noutbook, printer, kompyuter
+                  <i class="fas fa-angle-right"></i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="categore-navbar--link" data-toggle="pill" href="#categore_3">
+                  Oshxona texnika
+                  <i class="fas fa-angle-right"></i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="categore-navbar--link" data-toggle="pill" href="#categore_4">
+                  Bolalar uchun o'yinchoq va mahsulotlar
+                  <i class="fas fa-angle-right"></i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="categore-navbar--link" data-toggle="pill" href="#categore_5">
+                  Kitoblar
+                  <i class="fas fa-angle-right"></i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="categore-navbar--link" data-toggle="pill" href="#categore_6">
+                  Sport anjomlari
+                  <i class="fas fa-angle-right"></i>
+                </a>
+              </li>
+            </ul>
+          </aside>
+          <!-- Tab-content -->
+          <div class="tab-content">
+            <div class="tab-pane active open" id="categore_1">
+              <button class="btn btn-warning collapsed" data-toggle="collapse" data-target="#one">
+                Smartfon, telifon, gadjet, aksessuarlar
+                <span class="btn-angle">
+                  <i class="fal fa-angle-up"></i>
+                </span>
+              </button>
+              <div id="one" class="collapse">
+                <div class="tab-pane-wrapper">
+                  <ul class="nav">
+                    <!-- Tab-item -->
+                    <li class="nav-item">
+                      <a href="#">
+                        <h5 class="tab-pane-title">Smartfon</h5>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#"> Apple </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#"> Samsung </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#"> Huawei </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#"> Nokia </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#"> Xiaome </a>
+                    </li>
+                    <hr class="line" />
+                  </ul>
+                  <!-- Tab-item -->
+                  <ul class="nav">
+                    <li class="nav-item">
+                      <a href="#">
+                        <h5 class="tab-pane-title">Telifon</h5>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#"> Radiotelifon </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#"> Simli telifon </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#"> Ratsiya </a>
+                    </li>
+                    <hr class="line" />
+                  </ul>
+                  <!-- Tab-item -->
+                  <ul class="nav">
+                    <li class="nav-item">
+                      <a href="#">
+                        <h5 class="tab-pane-title">Tugmali telifonlar</h5>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#"> Nokia </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#"> INOI </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#"> Novey </a>
+                    </li>
+                    <hr class="line" />
+                  </ul>
+                  <!-- Tab-item  -->
+                  <ul class="nav">
+                    <li class="nav-item">
+                      <a href="#">
+                        <h5 class="tab-pane-title">Aqilli Soatlar</h5>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#"> Samsung </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#"> Huawei </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#"> Nokia </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#"> Xiaome </a>
+                    </li>
+                  </ul>
+                  <ul class="nav">
+                    <li class="nav-item">
+                      <a href="#">
+                        <h5 class="tab-pane-title">Aqilli Soatlar</h5>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#"> Samsung </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#"> Huawei </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#"> Nokia </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#"> Xiaome </a>
+                    </li>
+                  </ul>
+                  <ul class="nav">
+                    <li class="nav-item">
+                      <a href="#">
+                        <h5 class="tab-pane-title">Aqilli Soatlar</h5>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#"> Samsung </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#"> Huawei </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#"> Nokia </a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#"> Xiaome </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane" id="categore_2">
+              <button class="btn btn-warning collapsed" data-toggle="collapse" data-target="#two">
+                Noutbook, printer, kompyuter
+                <span class="btn-angle">
+                  <i class="fal fa-angle-up"></i>
+                </span>
+              </button>
+              <div id="two" class="collapse">
+                <div class="tab-pane-wrapper">
+                  <ul class="nav">
+                    <!-- Tab-item -->
+                    <li class="nav-item">
+                      <a href="#">
+                        <h5 class="tab-pane-title">2</h5>
+                      </a>
+                    </li>
+                    <hr class="line" />
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane" id="categore_3">
+              <button class="btn btn-warning collapsed" data-toggle="collapse" data-target="#three">
+                Smartfon, telifon, gadjet, aksessuarlar
+                <span class="btn-angle">
+                  <i class="fal fa-angle-up"></i>
+                </span>
+              </button>
+              <div id="three" class="collapse">
+                <div class="tab-pane-wrapper">
+                  <ul class="nav">
+                    <!-- Tab-item -->
+                    <li class="nav-item">
+                      <a href="#">
+                        <h5 class="tab-pane-title">3</h5>
+                      </a>
+                    </li>
+                    <hr class="line" />
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane" id="categore_4">
+              <button class="btn btn-warning collapsed" data-toggle="collapse" data-target="#four">
+                Bolalar uchun o'yinchoq va mahsulotlar
+                <span class="btn-angle">
+                  <i class="fal fa-angle-up"></i>
+                </span>
+              </button>
+              <div id="four" class="collapse">
+                <div class="tab-pane-wrapper">
+                  <ul class="nav">
+                    <!-- Tab-item -->
+                    <li class="nav-item">
+                      <a href="#">
+                        <h5 class="tab-pane-title">4</h5>
+                      </a>
+                    </li>
+                    <hr class="line" />
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane" id="categore_5">
+              <button class="btn btn-warning collapsed" data-toggle="collapse" data-target="#five">
+                Kitoblar
+                <span class="btn-angle">
+                  <i class="fal fa-angle-up"></i>
+                </span>
+              </button>
+              <div id="five" class="collapse">
+                <div class="tab-pane-wrapper">
+                  <ul class="nav">
+                    <!-- Tab-item -->
+                    <li class="nav-item">
+                      <a href="#">
+                        <h5 class="tab-pane-title">5</h5>
+                      </a>
+                    </li>
+                    <hr class="line" />
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane" id="categore_6">
+              <button class="btn btn-warning collapsed" data-toggle="collapse" data-target="#six">
+                Sport anjomlari
+                <span class="btn-angle">
+                  <i class="fal fa-angle-up"></i>
+                </span>
+              </button>
+              <div id="six" class="collapse">
+                <div class="tab-pane-wrapper">
+                  <ul class="nav">
+                    <!-- Tab-item -->
+                    <li class="nav-item">
+                      <a href="#">
+                        <h5 class="tab-pane-title">6</h5>
+                      </a>
+                    </li>
+                    <hr class="line" />
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Large-menu-close -->
+      <div class="categore-slider">
+        <ul class="nav wrapper-nav slider slider-head">
+          <li class="nav-item">
+            <a class="nav-link" href="#"> Samsung </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"> Xiaome </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"> Telifon </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"> Oshxona jihozlari </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"> Noutbook </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"> Kompyuter </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"> Aksisuarlar </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"> Uy jihozlari </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"> Aqilli soatlar </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"> Bolalar kiyimlari </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <!-- Header-close -->
+
+  <!-- Main-content-open -->
+  <main>
+    <div class="container">
+      <div class="row">
+        <div class="carousel slide mb-5 col-12 p-0" data-ride="carousel" id="demo">
+          <!-- The slideshow -->
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img alt="" src="img/img1.jpg" />
+            </div>
+            <div class="carousel-item">
+              <img alt="" src="img/img2.jpg" />
+            </div>
+            <div class="carousel-item">
+              <img alt="" src="img/img3.jpg" />
+            </div>
+          </div>
+          <!-- Left and right controls -->
+          <a class="carousel-control-prev" data-slide="prev" href="#demo">
+            <span class="carousel-control-prev-icon"> </span>
+          </a>
+          <a class="carousel-control-next" data-slide="next" href="#demo">
+            <span class="carousel-control-next-icon"> </span>
+          </a>
+        </div>
+      </div>
+      <div class="row d-flex justify-content-sm-start justify-content-center">
+        <div class="col-12">
+          <h5 class="product-title recommended-product">
+            <a href="product-more.html">
+              Tavsiya etilgan mahsulotlar
+              <i class="fas fa-angle-double-right link-arrow"> </i>
+            </a>
+          </h5>
+        </div>
+        <!-- Cards-open -->
+        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 mb-3">
+          <div class="card" data-id="1">
+            <span class="heart bookmark-btn" id="bookmark" title="Tanlangan sifatida sevimli">
+              <i class="far fa-bookmark"></i>
+              <i class="fas fa-bookmark actived"></i>
+            </span>
+            <span class="heart select-btn" id="select" title="Tanlangan sifatida sevimli">
+              <span class="badge">
+                100
+              </span>
+              <i class="far fa-heart"></i>
+              <i class="fas fa-heart actived"></i>
+            </span>
+            <a class="card-link" href="product-view.html">
+              <img alt="Card image" class="card-img-top" src="img/product/123.jpeg" />
+            </a>
+            <div class="card-body">
+              <p class="card-text">Smartfon</p>
+              <h4 class="card-title">Samsung Galaxy S21 3/32GB white Samsung</h4>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, ducimus.</p>
+              <div class="reting">
+                <svg class="active" fill="#FFC107" height="16px" version="1.1" viewbox="0 12.705 512 486.59"
+                  width="16px" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" y="0px">
+                  <polygon
+                    points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 ">
+                  </polygon>
+                </svg>
+                <svg class="active" fill="#FFC107" height="16px" version="1.1" viewbox="0 12.705 512 486.59"
+                  width="16px" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" y="0px">
+                  <polygon
+                    points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 ">
+                  </polygon>
+                </svg>
+                <svg class="active" fill="#FFC107" height="16px" version="1.1" viewbox="0 12.705 512 486.59"
+                  width="16px" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" y="0px">
+                  <polygon
+                    points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 ">
+                  </polygon>
+                </svg>
+                <svg class="active" fill="#FFC107" height="16px" version="1.1" viewbox="0 12.705 512 486.59"
+                  width="16px" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" y="0px">
+                  <polygon
+                    points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 ">
+                  </polygon>
+                </svg>
+                <svg fill="#FFC107" height="16px" version="1.1" viewbox="0 12.705 512 486.59" width="16px" x="0px"
+                  xml:space="preserve" xmlns="http://www.w3.org/2000/svg" y="0px">
+                  <polygon
+                    points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 ">
+                  </polygon>
+                </svg>
+              </div>
+              <p class="old-price" style="
+        text-decoration: line-through;">2 999 000 so'm</p>
+              <h5 class="new-price">2 499 000 so'm</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 mb-3">
+          <div class="card" data-id="2">
+            <span class="heart bookmark-btn" id="bookmark" title="Tanlangan sifatida sevimli">
+              <i class="far fa-bookmark"></i>
+              <i class="fas fa-bookmark actived"></i>
+            </span>
+            <span class="heart select-btn" id="select" title="Tanlangan sifatida sevimli">
+              <i class="far fa-heart"></i>
+              <i class="fas fa-heart actived"></i>
+            </span>
+            <a class="card-link" href="product-view.html">
+              <img alt="Card image" class="card-img-top" src="img/product/4.jpg" />
+            </a>
+            <div class="card-body">
+              <p class="card-text">Smartfon</p>
+              <h4 class="card-title">Samsung Galaxy S21 3/32GB white</h4>
+              <div class="reting">
+                <svg class="active" fill="#FFC107" height="16px" version="1.1" viewbox="0 12.705 512 486.59"
+                  width="16px" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" y="0px">
+                  <polygon
+                    points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 ">
+                  </polygon>
+                </svg>
+                <svg class="active" fill="#FFC107" height="16px" version="1.1" viewbox="0 12.705 512 486.59"
+                  width="16px" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" y="0px">
+                  <polygon
+                    points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 ">
+                  </polygon>
+                </svg>
+                <svg class="active" fill="#FFC107" height="16px" version="1.1" viewbox="0 12.705 512 486.59"
+                  width="16px" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" y="0px">
+                  <polygon
+                    points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 ">
+                  </polygon>
+                </svg>
+                <svg class="active" fill="#FFC107" height="16px" version="1.1" viewbox="0 12.705 512 486.59"
+                  width="16px" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" y="0px">
+                  <polygon
+                    points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 ">
+                  </polygon>
+                </svg>
+                <svg fill="#FFC107" height="16px" version="1.1" viewbox="0 12.705 512 486.59" width="16px" x="0px"
+                  xml:space="preserve" xmlns="http://www.w3.org/2000/svg" y="0px">
+                  <polygon
+                    points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 ">
+                  </polygon>
+                </svg>
+              </div>
+              <p class="old-price" style="
+                text-decoration: line-through;">2 999 000 so'm</p>
+              <h5 class="new-price">2 499 000 so'm</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 mb-3">
+          <div class="card" data-id="3">
+            <span class="heart bookmark-btn" id="bookmark" title="Tanlangan sifatida sevimli">
+              <i class="far fa-bookmark"></i>
+              <i class="fas fa-bookmark actived"></i>
+            </span>
+            <span class="heart select-btn" id="select" title="Tanlangan sifatida sevimli">
+              <i class="far fa-heart"></i>
+              <i class="fas fa-heart actived"></i>
+            </span>
+            <a class="card-link" href="product-view.html">
+              <img alt="Card image" class="card-img-top" src="img/product/tv.jfif" />
+            </a>
+            <div class="card-body">
+              <p class="card-text">Smartfon</p>
+              <h4 class="card-title">Samsung Galaxy S21 3/32GB white</h4>
+              <div class="reting">
+                <svg class="active" fill="#FFC107" height="16px" version="1.1" viewbox="0 12.705 512 486.59"
+                  width="16px" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" y="0px">
+                  <polygon
+                    points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 ">
+                  </polygon>
+                </svg>
+                <svg class="active" fill="#FFC107" height="16px" version="1.1" viewbox="0 12.705 512 486.59"
+                  width="16px" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" y="0px">
+                  <polygon
+                    points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 ">
+                  </polygon>
+                </svg>
+                <svg class="active" fill="#FFC107" height="16px" version="1.1" viewbox="0 12.705 512 486.59"
+                  width="16px" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" y="0px">
+                  <polygon
+                    points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 ">
+                  </polygon>
+                </svg>
+                <svg class="active" fill="#FFC107" height="16px" version="1.1" viewbox="0 12.705 512 486.59"
+                  width="16px" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" y="0px">
+                  <polygon
+                    points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 ">
+                  </polygon>
+                </svg>
+                <svg fill="#FFC107" height="16px" version="1.1" viewbox="0 12.705 512 486.59" width="16px" x="0px"
+                  xml:space="preserve" xmlns="http://www.w3.org/2000/svg" y="0px">
+                  <polygon
+                    points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 ">
+                  </polygon>
+                </svg>
+              </div>
+              <p class="old-price" style="
+                text-decoration: line-through;">2 999 000 so'm</p>
+              <h5 class="new-price">2 499 000 so'm</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 mb-3">
+          <div class="card" data-id="4">
+            <span class="heart bookmark-btn" id="bookmark" title="Tanlangan sifatida sevimli">
+              <i class="far fa-bookmark"></i>
+              <i class="fas fa-bookmark actived"></i>
+            </span>
+            <span class="heart select-btn" id="select" title="Tanlangan sifatida sevimli">
+              <i class="far fa-heart"></i>
+              <i class="fas fa-heart actived"></i>
+            </span>
+            <a class="card-link" href="product-view.html">
+              <img alt="Card image" class="card-img-top" src="img/product/product1.jpeg" />
+            </a>
+            <div class="card-body">
+              <p class="card-text">Smartfon</p>
+              <h4 class="card-title">Samsung Galaxy S21 3/32GB white</h4>
+              <div class="reting">
+                <svg class="active" fill="#FFC107" height="16px" version="1.1" viewbox="0 12.705 512 486.59"
+                  width="16px" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" y="0px">
+                  <polygon
+                    points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 ">
+                  </polygon>
+                </svg>
+                <svg class="active" fill="#FFC107" height="16px" version="1.1" viewbox="0 12.705 512 486.59"
+                  width="16px" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" y="0px">
+                  <polygon
+                    points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 ">
+                  </polygon>
+                </svg>
+                <svg class="active" fill="#FFC107" height="16px" version="1.1" viewbox="0 12.705 512 486.59"
+                  width="16px" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" y="0px">
+                  <polygon
+                    points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 ">
+                  </polygon>
+                </svg>
+                <svg class="active" fill="#FFC107" height="16px" version="1.1" viewbox="0 12.705 512 486.59"
+                  width="16px" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" y="0px">
+                  <polygon
+                    points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 ">
+                  </polygon>
+                </svg>
+                <svg fill="#FFC107" height="16px" version="1.1" viewbox="0 12.705 512 486.59" width="16px" x="0px"
+                  xml:space="preserve" xmlns="http://www.w3.org/2000/svg" y="0px">
+                  <polygon
+                    points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 ">
+                  </polygon>
+                </svg>
+              </div>
+              <p class="old-price" style="
+                text-decoration: line-through;">2 999 000 so'm</p>
+              <h5 class="new-price">2 499 000 so'm</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 mb-3">
+          <div class="card" data-id="5">
+            <span class="heart bookmark-btn" id="bookmark" title="Tanlangan sifatida sevimli">
+              <i class="far fa-bookmark"></i>
+              <i class="fas fa-bookmark actived"></i>
+            </span>
+            <span class="heart select-btn" id="select" title="Tanlangan sifatida sevimli">
+              <i class="far fa-heart"></i>
+              <i class="fas fa-heart actived"></i>
+            </span>
+            <a class="card-link" href="product-view.html">
+              <img alt="Card image" class="card-img-top" src="img/product/product1.jpeg" />
+            </a>
+            <div class="card-body">
+              <p class="card-text">Smartfon</p>
+              <h4 class="card-title">Samsung Galaxy S21 3/32GB white</h4>
+              <div class="reting">
+                <svg class="active" fill="#FFC107" height="16px" version="1.1" viewbox="0 12.705 512 486.59"
+                  width="16px" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" y="0px">
+                  <polygon
+                    points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 ">
+                  </polygon>
+                </svg>
+                <svg class="active" fill="#FFC107" height="16px" version="1.1" viewbox="0 12.705 512 486.59"
+                  width="16px" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" y="0px">
+                  <polygon
+                    points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 ">
+                  </polygon>
+                </svg>
+                <svg class="active" fill="#FFC107" height="16px" version="1.1" viewbox="0 12.705 512 486.59"
+                  width="16px" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" y="0px">
+                  <polygon
+                    points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 ">
+                  </polygon>
+                </svg>
+                <svg class="active" fill="#FFC107" height="16px" version="1.1" viewbox="0 12.705 512 486.59"
+                  width="16px" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" y="0px">
+                  <polygon
+                    points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 ">
+                  </polygon>
+                </svg>
+                <svg fill="#FFC107" height="16px" version="1.1" viewbox="0 12.705 512 486.59" width="16px" x="0px"
+                  xml:space="preserve" xmlns="http://www.w3.org/2000/svg" y="0px">
+                  <polygon
+                    points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 ">
+                  </polygon>
+                </svg>
+              </div>
+              <p class="old-price" style="
+                text-decoration: line-through;">2 999 000 so'm</p>
+              <h5 class="new-price">2 499 000 so'm</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 mb-3">
+          <div class="card" data-id="6">
+            <span class="heart bookmark-btn" id="bookmark" title="Tanlangan sifatida sevimli">
+              <i class="far fa-bookmark"></i>
+              <i class="fas fa-bookmark actived"></i>
+            </span>
+            <span class="heart select-btn" id="select" title="Tanlangan sifatida sevimli">
+              <i class="far fa-heart"></i>
+              <i class="fas fa-heart actived"></i>
+            </span>
+            <a class="card-link" href="product-view.html">
+              <img alt="Card image" class="card-img-top" src="img/product/product1.jpeg" />
+            </a>
+            <div class="card-body">
+              <p class="card-text">Smartfon</p>
+              <h4 class="card-title">Samsung Galaxy S21 3/32GB white</h4>
+              <div class="reting">
+                <svg class="active" fill="#FFC107" height="16px" version="1.1" viewbox="0 12.705 512 486.59"
+                  width="16px" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" y="0px">
+                  <polygon
+                    points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 ">
+                  </polygon>
+                </svg>
+                <svg class="active" fill="#FFC107" height="16px" version="1.1" viewbox="0 12.705 512 486.59"
+                  width="16px" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" y="0px">
+                  <polygon
+                    points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 ">
+                  </polygon>
+                </svg>
+                <svg class="active" fill="#FFC107" height="16px" version="1.1" viewbox="0 12.705 512 486.59"
+                  width="16px" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" y="0px">
+                  <polygon
+                    points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 ">
+                  </polygon>
+                </svg>
+                <svg class="active" fill="#FFC107" height="16px" version="1.1" viewbox="0 12.705 512 486.59"
+                  width="16px" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" y="0px">
+                  <polygon
+                    points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 ">
+                  </polygon>
+                </svg>
+                <svg fill="#FFC107" height="16px" version="1.1" viewbox="0 12.705 512 486.59" width="16px" x="0px"
+                  xml:space="preserve" xmlns="http://www.w3.org/2000/svg" y="0px">
+                  <polygon
+                    points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 ">
+                  </polygon>
+                </svg>
+              </div>
+              <p class="old-price" style="
+                text-decoration: line-through;">2 999 000 so'm</p>
+              <h5 class="new-price">2 499 000 so'm</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 mb-3">
+          <div class="card" data-id="7">
+            <span class="heart bookmark-btn" id="bookmark" title="Tanlangan sifatida sevimli">
+              <i class="far fa-bookmark"></i>
+              <i class="fas fa-bookmark actived"></i>
+            </span>
+            <span class="heart select-btn" id="select" title="Tanlangan sifatida sevimli">
+              <i class="far fa-heart"></i>
+              <i class="fas fa-heart actived"></i>
+            </span>
+            <a class="card-link" href="product-view.html">
+              <img alt="Card image" class="card-img-top" src="img/product/product1.jpeg" />
+            </a>
+            <div class="card-body">
+              <p class="card-text">Smartfon</p>
+              <h4 class="card-title">Samsung Galaxy S21 3/32GB white</h4>
+              <div class="reting">
+                <svg class="active" fill="#FFC107" height="16px" version="1.1" viewbox="0 12.705 512 486.59"
+                  width="16px" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" y="0px">
+                  <polygon
+                    points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 ">
+                  </polygon>
+                </svg>
+                <svg class="active" fill="#FFC107" height="16px" version="1.1" viewbox="0 12.705 512 486.59"
+                  width="16px" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" y="0px">
+                  <polygon
+                    points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 ">
+                  </polygon>
+                </svg>
+                <svg class="active" fill="#FFC107" height="16px" version="1.1" viewbox="0 12.705 512 486.59"
+                  width="16px" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" y="0px">
+                  <polygon
+                    points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 ">
+                  </polygon>
+                </svg>
+                <svg class="active" fill="#FFC107" height="16px" version="1.1" viewbox="0 12.705 512 486.59"
+                  width="16px" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" y="0px">
+                  <polygon
+                    points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 ">
+                  </polygon>
+                </svg>
+                <svg fill="#FFC107" height="16px" version="1.1" viewbox="0 12.705 512 486.59" width="16px" x="0px"
+                  xml:space="preserve" xmlns="http://www.w3.org/2000/svg" y="0px">
+                  <polygon
+                    points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 ">
+                  </polygon>
+                </svg>
+              </div>
+              <p class="old-price" style="
+                text-decoration: line-through;">2 999 000 so'm</p>
+              <h5 class="new-price">2 499 000 so'm</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 mb-3">
+          <div class="card" data-id="8">
+            <span class="heart bookmark-btn" id="bookmark" title="Tanlangan sifatida sevimli">
+              <i class="far fa-bookmark"></i>
+              <i class="fas fa-bookmark actived"></i>
+            </span>
+            <span class="heart select-btn" id="select" title="Tanlangan sifatida sevimli">
+              <i class="far fa-heart"></i>
+              <i class="fas fa-heart actived"></i>
+            </span>
+            <a class="card-link" href="product-view.html">
+              <img alt="Card image" class="card-img-top" src="img/product/product1.jpeg" />
+            </a>
+            <div class="card-body">
+              <p class="card-text">Smartfon</p>
+              <h4 class="card-title">Samsung Galaxy S21 3/32GB white</h4>
+              <div class="reting">
+                <svg class="active" fill="#FFC107" height="16px" version="1.1" viewbox="0 12.705 512 486.59"
+                  width="16px" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" y="0px">
+                  <polygon
+                    points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 ">
+                  </polygon>
+                </svg>
+                <svg class="active" fill="#FFC107" height="16px" version="1.1" viewbox="0 12.705 512 486.59"
+                  width="16px" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" y="0px">
+                  <polygon
+                    points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 ">
+                  </polygon>
+                </svg>
+                <svg class="active" fill="#FFC107" height="16px" version="1.1" viewbox="0 12.705 512 486.59"
+                  width="16px" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" y="0px">
+                  <polygon
+                    points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 ">
+                  </polygon>
+                </svg>
+                <svg class="active" fill="#FFC107" height="16px" version="1.1" viewbox="0 12.705 512 486.59"
+                  width="16px" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" y="0px">
+                  <polygon
+                    points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 ">
+                  </polygon>
+                </svg>
+                <svg fill="#FFC107" height="16px" version="1.1" viewbox="0 12.705 512 486.59" width="16px" x="0px"
+                  xml:space="preserve" xmlns="http://www.w3.org/2000/svg" y="0px">
+                  <polygon
+                    points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 ">
+                  </polygon>
+                </svg>
+              </div>
+              <p class="old-price" style="
+                text-decoration: line-through;">2 999 000 so'm</p>
+              <h5 class="new-price">2 499 000 so'm</h5>
+            </div>
+          </div>
+        </div>
+        <!-- Cards-close -->
+      </div>
+      <div class="product-content">
+        <h5 class="product-title product-popular">
+          <a href="product-more.html">
+            Eng ko'ptanlangan mahsulot
+            <i class="fas fa-angle-double-right link-arrow"> </i>
+          </a>
+        </h5>
+        <!-- Cards-open -->
+        <div class="row d-flex justify-content-sm-start justify-content-center">
+          <div class="col-12">
+            <h5 class="product-title recommended-product">
+              <a href="product-more.html">
+                Tavsiya etilgan mahsulotlar
+                <i class="fas fa-angle-double-right link-arrow"> </i>
+              </a>
+            </h5>
+          </div>
+          <!-- Cards-open -->
+          <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 mb-3">
+            <div class="card" data-id="1">
+              <span class="heart bookmark-btn" id="bookmark" title="Tanlangan sifatida sevimli">
+                <i class="far fa-bookmark"></i>
+                <i class="fas fa-bookmark actived"></i>
+              </span>
+              <span class="heart select-btn" id="select" title="Tanlangan sifatida sevimli">
+                <span class="badge">
+                  100
+                </span>
+                <i class="far fa-heart"></i>
+                <i class="fas fa-heart actived"></i>
+              </span>
+              <a class="card-link" href="product-view.html">
+                <img alt="Card image" class="card-img-top" src="img/product/123.jpeg" />
+              </a>
+              <div class="card-body">
+                <p class="card-text">Smartfon</p>
+                <h4 class="card-title">Samsung Galaxy S21 3/32GB white Samsung</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, ducimus.</p>
+                <div class="reting">
+                  <svg class="active" fill="#FFC107" height="16px" version="1.1" viewbox="0 12.705 512 486.59"
+                    width="16px" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" y="0px">
+                    <polygon
+                      points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 ">
+                    </polygon>
+                  </svg>
+                  <svg class="active" fill="#FFC107" height="16px" version="1.1" viewbox="0 12.705 512 486.59"
+                    width="16px" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" y="0px">
+                    <polygon
+                      points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 ">
+                    </polygon>
+                  </svg>
+                  <svg class="active" fill="#FFC107" height="16px" version="1.1" viewbox="0 12.705 512 486.59"
+                    width="16px" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" y="0px">
+                    <polygon
+                      points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 ">
+                    </polygon>
+                  </svg>
+                  <svg class="active" fill="#FFC107" height="16px" version="1.1" viewbox="0 12.705 512 486.59"
+                    width="16px" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" y="0px">
+                    <polygon
+                      points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 ">
+                    </polygon>
+                  </svg>
+                  <svg fill="#FFC107" height="16px" version="1.1" viewbox="0 12.705 512 486.59" width="16px" x="0px"
+                    xml:space="preserve" xmlns="http://www.w3.org/2000/svg" y="0px">
+                    <polygon
+                      points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 ">
+                    </polygon>
+                  </svg>
+                </div>
+                <p class="old-price" style="
+          text-decoration: line-through;">2 999 000 so'm</p>
+                <h5 class="new-price">2 499 000 so'm</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 mb-3">
+            <div class="card" data-id="2">
+              <span class="heart bookmark-btn" id="bookmark" title="Tanlangan sifatida sevimli">
+                <i class="far fa-bookmark"></i>
+                <i class="fas fa-bookmark actived"></i>
+              </span>
+              <span class="heart select-btn" id="select" title="Tanlangan sifatida sevimli">
+                <i class="far fa-heart"></i>
+                <i class="fas fa-heart actived"></i>
+              </span>
+              <a class="card-link" href="product-view.html">
+                <img alt="Card image" class="card-img-top" src="img/product/4.jpg" />
+              </a>
+              <div class="card-body">
+                <p class="card-text">Smartfon</p>
+                <h4 class="card-title">Samsung Galaxy S21 3/32GB white</h4>
+                <div class="reting">
+                  <svg class="active" fill="#FFC107" height="16px" version="1.1" viewbox="0 12.705 512 486.59"
+                    width="16px" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" y="0px">
+                    <polygon
+                      points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 ">
+                    </polygon>
+                  </svg>
+                  <svg class="active" fill="#FFC107" height="16px" version="1.1" viewbox="0 12.705 512 486.59"
+                    width="16px" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" y="0px">
+                    <polygon
+                      points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 ">
+                    </polygon>
+                  </svg>
+                  <svg class="active" fill="#FFC107" height="16px" version="1.1" viewbox="0 12.705 512 486.59"
+                    width="16px" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" y="0px">
+                    <polygon
+                      points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 ">
+                    </polygon>
+                  </svg>
+                  <svg class="active" fill="#FFC107" height="16px" version="1.1" viewbox="0 12.705 512 486.59"
+                    width="16px" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" y="0px">
+                    <polygon
+                      points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 ">
+                    </polygon>
+                  </svg>
+                  <svg fill="#FFC107" height="16px" version="1.1" viewbox="0 12.705 512 486.59" width="16px" x="0px"
+                    xml:space="preserve" xmlns="http://www.w3.org/2000/svg" y="0px">
+                    <polygon
+                      points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 ">
+                    </polygon>
+                  </svg>
+                </div>
+                <p class="old-price" style="
+                  text-decoration: line-through;">2 999 000 so'm</p>
+                <h5 class="new-price">2 499 000 so'm</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 mb-3">
+            <div class="card" data-id="3">
+              <span class="heart bookmark-btn" id="bookmark" title="Tanlangan sifatida sevimli">
+                <i class="far fa-bookmark"></i>
+                <i class="fas fa-bookmark actived"></i>
+              </span>
+              <span class="heart select-btn" id="select" title="Tanlangan sifatida sevimli">
+                <i class="far fa-heart"></i>
+                <i class="fas fa-heart actived"></i>
+              </span>
+              <a class="card-link" href="product-view.html">
+                <img alt="Card image" class="card-img-top" src="img/product/tv.jfif" />
+              </a>
+              <div class="card-body">
+                <p class="card-text">Smartfon</p>
+                <h4 class="card-title">Samsung Galaxy S21 3/32GB white</h4>
+                <div class="reting">
+                  <svg class="active" fill="#FFC107" height="16px" version="1.1" viewbox="0 12.705 512 486.59"
+                    width="16px" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" y="0px">
+                    <polygon
+                      points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 ">
+                    </polygon>
+                  </svg>
+                  <svg class="active" fill="#FFC107" height="16px" version="1.1" viewbox="0 12.705 512 486.59"
+                    width="16px" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" y="0px">
+                    <polygon
+                      points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 ">
+                    </polygon>
+                  </svg>
+                  <svg class="active" fill="#FFC107" height="16px" version="1.1" viewbox="0 12.705 512 486.59"
+                    width="16px" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" y="0px">
+                    <polygon
+                      points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 ">
+                    </polygon>
+                  </svg>
+                  <svg class="active" fill="#FFC107" height="16px" version="1.1" viewbox="0 12.705 512 486.59"
+                    width="16px" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" y="0px">
+                    <polygon
+                      points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 ">
+                    </polygon>
+                  </svg>
+                  <svg fill="#FFC107" height="16px" version="1.1" viewbox="0 12.705 512 486.59" width="16px" x="0px"
+                    xml:space="preserve" xmlns="http://www.w3.org/2000/svg" y="0px">
+                    <polygon
+                      points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 ">
+                    </polygon>
+                  </svg>
+                </div>
+                <p class="old-price" style="
+                  text-decoration: line-through;">2 999 000 so'm</p>
+                <h5 class="new-price">2 499 000 so'm</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 mb-3">
+            <div class="card" data-id="4">
+              <span class="heart bookmark-btn" id="bookmark" title="Tanlangan sifatida sevimli">
+                <i class="far fa-bookmark"></i>
+                <i class="fas fa-bookmark actived"></i>
+              </span>
+              <span class="heart select-btn" id="select" title="Tanlangan sifatida sevimli">
+                <i class="far fa-heart"></i>
+                <i class="fas fa-heart actived"></i>
+              </span>
+              <a class="card-link" href="product-view.html">
+                <img alt="Card image" class="card-img-top" src="img/product/product1.jpeg" />
+              </a>
+              <div class="card-body">
+                <p class="card-text">Smartfon</p>
+                <h4 class="card-title">Samsung Galaxy S21 3/32GB white</h4>
+                <div class="reting">
+                  <svg class="active" fill="#FFC107" height="16px" version="1.1" viewbox="0 12.705 512 486.59"
+                    width="16px" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" y="0px">
+                    <polygon
+                      points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 ">
+                    </polygon>
+                  </svg>
+                  <svg class="active" fill="#FFC107" height="16px" version="1.1" viewbox="0 12.705 512 486.59"
+                    width="16px" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" y="0px">
+                    <polygon
+                      points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 ">
+                    </polygon>
+                  </svg>
+                  <svg class="active" fill="#FFC107" height="16px" version="1.1" viewbox="0 12.705 512 486.59"
+                    width="16px" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" y="0px">
+                    <polygon
+                      points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 ">
+                    </polygon>
+                  </svg>
+                  <svg class="active" fill="#FFC107" height="16px" version="1.1" viewbox="0 12.705 512 486.59"
+                    width="16px" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" y="0px">
+                    <polygon
+                      points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 ">
+                    </polygon>
+                  </svg>
+                  <svg fill="#FFC107" height="16px" version="1.1" viewbox="0 12.705 512 486.59" width="16px" x="0px"
+                    xml:space="preserve" xmlns="http://www.w3.org/2000/svg" y="0px">
+                    <polygon
+                      points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 ">
+                    </polygon>
+                  </svg>
+                </div>
+                <p class="old-price" style="
+                  text-decoration: line-through;">2 999 000 so'm</p>
+                <h5 class="new-price">2 499 000 so'm</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 mb-3">
+            <div class="card" data-id="5">
+              <span class="heart bookmark-btn" id="bookmark" title="Tanlangan sifatida sevimli">
+                <i class="far fa-bookmark"></i>
+                <i class="fas fa-bookmark actived"></i>
+              </span>
+              <span class="heart select-btn" id="select" title="Tanlangan sifatida sevimli">
+                <i class="far fa-heart"></i>
+                <i class="fas fa-heart actived"></i>
+              </span>
+              <a class="card-link" href="product-view.html">
+                <img alt="Card image" class="card-img-top" src="img/product/product1.jpeg" />
+              </a>
+              <div class="card-body">
+                <p class="card-text">Smartfon</p>
+                <h4 class="card-title">Samsung Galaxy S21 3/32GB white</h4>
+                <div class="reting">
+                  <svg class="active" fill="#FFC107" height="16px" version="1.1" viewbox="0 12.705 512 486.59"
+                    width="16px" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" y="0px">
+                    <polygon
+                      points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 ">
+                    </polygon>
+                  </svg>
+                  <svg class="active" fill="#FFC107" height="16px" version="1.1" viewbox="0 12.705 512 486.59"
+                    width="16px" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" y="0px">
+                    <polygon
+                      points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 ">
+                    </polygon>
+                  </svg>
+                  <svg class="active" fill="#FFC107" height="16px" version="1.1" viewbox="0 12.705 512 486.59"
+                    width="16px" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" y="0px">
+                    <polygon
+                      points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 ">
+                    </polygon>
+                  </svg>
+                  <svg class="active" fill="#FFC107" height="16px" version="1.1" viewbox="0 12.705 512 486.59"
+                    width="16px" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" y="0px">
+                    <polygon
+                      points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 ">
+                    </polygon>
+                  </svg>
+                  <svg fill="#FFC107" height="16px" version="1.1" viewbox="0 12.705 512 486.59" width="16px" x="0px"
+                    xml:space="preserve" xmlns="http://www.w3.org/2000/svg" y="0px">
+                    <polygon
+                      points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 ">
+                    </polygon>
+                  </svg>
+                </div>
+                <p class="old-price" style="
+                  text-decoration: line-through;">2 999 000 so'm</p>
+                <h5 class="new-price">2 499 000 so'm</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 mb-3">
+            <div class="card" data-id="6">
+              <span class="heart bookmark-btn" id="bookmark" title="Tanlangan sifatida sevimli">
+                <i class="far fa-bookmark"></i>
+                <i class="fas fa-bookmark actived"></i>
+              </span>
+              <span class="heart select-btn" id="select" title="Tanlangan sifatida sevimli">
+                <i class="far fa-heart"></i>
+                <i class="fas fa-heart actived"></i>
+              </span>
+              <a class="card-link" href="product-view.html">
+                <img alt="Card image" class="card-img-top" src="img/product/product1.jpeg" />
+              </a>
+              <div class="card-body">
+                <p class="card-text">Smartfon</p>
+                <h4 class="card-title">Samsung Galaxy S21 3/32GB white</h4>
+                <div class="reting">
+                  <svg class="active" fill="#FFC107" height="16px" version="1.1" viewbox="0 12.705 512 486.59"
+                    width="16px" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" y="0px">
+                    <polygon
+                      points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 ">
+                    </polygon>
+                  </svg>
+                  <svg class="active" fill="#FFC107" height="16px" version="1.1" viewbox="0 12.705 512 486.59"
+                    width="16px" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" y="0px">
+                    <polygon
+                      points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 ">
+                    </polygon>
+                  </svg>
+                  <svg class="active" fill="#FFC107" height="16px" version="1.1" viewbox="0 12.705 512 486.59"
+                    width="16px" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" y="0px">
+                    <polygon
+                      points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 ">
+                    </polygon>
+                  </svg>
+                  <svg class="active" fill="#FFC107" height="16px" version="1.1" viewbox="0 12.705 512 486.59"
+                    width="16px" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" y="0px">
+                    <polygon
+                      points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 ">
+                    </polygon>
+                  </svg>
+                  <svg fill="#FFC107" height="16px" version="1.1" viewbox="0 12.705 512 486.59" width="16px" x="0px"
+                    xml:space="preserve" xmlns="http://www.w3.org/2000/svg" y="0px">
+                    <polygon
+                      points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 ">
+                    </polygon>
+                  </svg>
+                </div>
+                <p class="old-price" style="
+                  text-decoration: line-through;">2 999 000 so'm</p>
+                <h5 class="new-price">2 499 000 so'm</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 mb-3">
+            <div class="card" data-id="7">
+              <span class="heart bookmark-btn" id="bookmark" title="Tanlangan sifatida sevimli">
+                <i class="far fa-bookmark"></i>
+                <i class="fas fa-bookmark actived"></i>
+              </span>
+              <span class="heart select-btn" id="select" title="Tanlangan sifatida sevimli">
+                <i class="far fa-heart"></i>
+                <i class="fas fa-heart actived"></i>
+              </span>
+              <a class="card-link" href="product-view.html">
+                <img alt="Card image" class="card-img-top" src="img/product/product1.jpeg" />
+              </a>
+              <div class="card-body">
+                <p class="card-text">Smartfon</p>
+                <h4 class="card-title">Samsung Galaxy S21 3/32GB white</h4>
+                <div class="reting">
+                  <svg class="active" fill="#FFC107" height="16px" version="1.1" viewbox="0 12.705 512 486.59"
+                    width="16px" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" y="0px">
+                    <polygon
+                      points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 ">
+                    </polygon>
+                  </svg>
+                  <svg class="active" fill="#FFC107" height="16px" version="1.1" viewbox="0 12.705 512 486.59"
+                    width="16px" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" y="0px">
+                    <polygon
+                      points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 ">
+                    </polygon>
+                  </svg>
+                  <svg class="active" fill="#FFC107" height="16px" version="1.1" viewbox="0 12.705 512 486.59"
+                    width="16px" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" y="0px">
+                    <polygon
+                      points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 ">
+                    </polygon>
+                  </svg>
+                  <svg class="active" fill="#FFC107" height="16px" version="1.1" viewbox="0 12.705 512 486.59"
+                    width="16px" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" y="0px">
+                    <polygon
+                      points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 ">
+                    </polygon>
+                  </svg>
+                  <svg fill="#FFC107" height="16px" version="1.1" viewbox="0 12.705 512 486.59" width="16px" x="0px"
+                    xml:space="preserve" xmlns="http://www.w3.org/2000/svg" y="0px">
+                    <polygon
+                      points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 ">
+                    </polygon>
+                  </svg>
+                </div>
+                <p class="old-price" style="
+                  text-decoration: line-through;">2 999 000 so'm</p>
+                <h5 class="new-price">2 499 000 so'm</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 mb-3">
+            <div class="card" data-id="8">
+              <span class="heart bookmark-btn" id="bookmark" title="Tanlangan sifatida sevimli">
+                <i class="far fa-bookmark"></i>
+                <i class="fas fa-bookmark actived"></i>
+              </span>
+              <span class="heart select-btn" id="select" title="Tanlangan sifatida sevimli">
+                <i class="far fa-heart"></i>
+                <i class="fas fa-heart actived"></i>
+              </span>
+              <a class="card-link" href="product-view.html">
+                <img alt="Card image" class="card-img-top" src="img/product/product1.jpeg" />
+              </a>
+              <div class="card-body">
+                <p class="card-text">Smartfon</p>
+                <h4 class="card-title">Samsung Galaxy S21 3/32GB white</h4>
+                <div class="reting">
+                  <svg class="active" fill="#FFC107" height="16px" version="1.1" viewbox="0 12.705 512 486.59"
+                    width="16px" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" y="0px">
+                    <polygon
+                      points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 ">
+                    </polygon>
+                  </svg>
+                  <svg class="active" fill="#FFC107" height="16px" version="1.1" viewbox="0 12.705 512 486.59"
+                    width="16px" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" y="0px">
+                    <polygon
+                      points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 ">
+                    </polygon>
+                  </svg>
+                  <svg class="active" fill="#FFC107" height="16px" version="1.1" viewbox="0 12.705 512 486.59"
+                    width="16px" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" y="0px">
+                    <polygon
+                      points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 ">
+                    </polygon>
+                  </svg>
+                  <svg class="active" fill="#FFC107" height="16px" version="1.1" viewbox="0 12.705 512 486.59"
+                    width="16px" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" y="0px">
+                    <polygon
+                      points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 ">
+                    </polygon>
+                  </svg>
+                  <svg fill="#FFC107" height="16px" version="1.1" viewbox="0 12.705 512 486.59" width="16px" x="0px"
+                    xml:space="preserve" xmlns="http://www.w3.org/2000/svg" y="0px">
+                    <polygon
+                      points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 ">
+                    </polygon>
+                  </svg>
+                </div>
+                <p class="old-price" style="
+                  text-decoration: line-through;">2 999 000 so'm</p>
+                <h5 class="new-price">2 499 000 so'm</h5>
+              </div>
+            </div>
+          </div>
+          <!-- Cards-close -->
+        </div>
+        <!-- Cards-close -->
+      </div>
+      <div class="product-content">
+        <h5 class="product-title new-product-title">
+          <a href="product-more.html">
+            Yangi mahsulotlar
+            <i class="fas fa-angle-double-right link-arrow"> </i>
+          </a>
+        </h5>
+        <!-- Cards-open -->
+        <div class="row d-flex justify-content-sm-start justify-content-center">
+          <div class="col-12">
+            <h5 class="product-title recommended-product">
+              <a href="product-more.html">
+                Tavsiya etilgan mahsulotlar
+                <i class="fas fa-angle-double-right link-arrow"> </i>
+              </a>
+            </h5>
+          </div>
+          <!-- Cards-open -->
+          <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 mb-3">
+            <div class="card" data-id="1">
+              <span class="heart bookmark-btn" id="bookmark" title="Tanlangan sifatida sevimli">
+                <i class="far fa-bookmark"></i>
+                <i class="fas fa-bookmark actived"></i>
+              </span>
+              <span class="heart select-btn" id="select" title="Tanlangan sifatida sevimli">
+                <span class="badge">
+                  100
+                </span>
+                <i class="far fa-heart"></i>
+                <i class="fas fa-heart actived"></i>
+              </span>
+              <a class="card-link" href="product-view.html">
+                <img alt="Card image" class="card-img-top" src="img/product/123.jpeg" />
+              </a>
+              <div class="card-body">
+                <p class="card-text">Smartfon</p>
+                <h4 class="card-title">Samsung Galaxy S21 3/32GB white Samsung</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, ducimus.</p>
+                <div class="reting">
+                  <svg class="active" fill="#FFC107" height="16px" version="1.1" viewbox="0 12.705 512 486.59"
+                    width="16px" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" y="0px">
+                    <polygon
+                      points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 ">
+                    </polygon>
+                  </svg>
+                  <svg class="active" fill="#FFC107" height="16px" version="1.1" viewbox="0 12.705 512 486.59"
+                    width="16px" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" y="0px">
+                    <polygon
+                      points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 ">
+                    </polygon>
+                  </svg>
+                  <svg class="active" fill="#FFC107" height="16px" version="1.1" viewbox="0 12.705 512 486.59"
+                    width="16px" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" y="0px">
+                    <polygon
+                      points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 ">
+                    </polygon>
+                  </svg>
+                  <svg class="active" fill="#FFC107" height="16px" version="1.1" viewbox="0 12.705 512 486.59"
+                    width="16px" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" y="0px">
+                    <polygon
+                      points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 ">
+                    </polygon>
+                  </svg>
+                  <svg fill="#FFC107" height="16px" version="1.1" viewbox="0 12.705 512 486.59" width="16px" x="0px"
+                    xml:space="preserve" xmlns="http://www.w3.org/2000/svg" y="0px">
+                    <polygon
+                      points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 ">
+                    </polygon>
+                  </svg>
+                </div>
+                <p class="old-price" style="
+          text-decoration: line-through;">2 999 000 so'm</p>
+                <h5 class="new-price">2 499 000 so'm</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 mb-3">
+            <div class="card" data-id="2">
+              <span class="heart bookmark-btn" id="bookmark" title="Tanlangan sifatida sevimli">
+                <i class="far fa-bookmark"></i>
+                <i class="fas fa-bookmark actived"></i>
+              </span>
+              <span class="heart select-btn" id="select" title="Tanlangan sifatida sevimli">
+                <i class="far fa-heart"></i>
+                <i class="fas fa-heart actived"></i>
+              </span>
+              <a class="card-link" href="product-view.html">
+                <img alt="Card image" class="card-img-top" src="img/product/4.jpg" />
+              </a>
+              <div class="card-body">
+                <p class="card-text">Smartfon</p>
+                <h4 class="card-title">Samsung Galaxy S21 3/32GB white</h4>
+                <div class="reting">
+                  <svg class="active" fill="#FFC107" height="16px" version="1.1" viewbox="0 12.705 512 486.59"
+                    width="16px" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" y="0px">
+                    <polygon
+                      points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 ">
+                    </polygon>
+                  </svg>
+                  <svg class="active" fill="#FFC107" height="16px" version="1.1" viewbox="0 12.705 512 486.59"
+                    width="16px" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" y="0px">
+                    <polygon
+                      points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 ">
+                    </polygon>
+                  </svg>
+                  <svg class="active" fill="#FFC107" height="16px" version="1.1" viewbox="0 12.705 512 486.59"
+                    width="16px" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" y="0px">
+                    <polygon
+                      points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 ">
+                    </polygon>
+                  </svg>
+                  <svg class="active" fill="#FFC107" height="16px" version="1.1" viewbox="0 12.705 512 486.59"
+                    width="16px" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" y="0px">
+                    <polygon
+                      points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 ">
+                    </polygon>
+                  </svg>
+                  <svg fill="#FFC107" height="16px" version="1.1" viewbox="0 12.705 512 486.59" width="16px" x="0px"
+                    xml:space="preserve" xmlns="http://www.w3.org/2000/svg" y="0px">
+                    <polygon
+                      points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 ">
+                    </polygon>
+                  </svg>
+                </div>
+                <p class="old-price" style="
+                  text-decoration: line-through;">2 999 000 so'm</p>
+                <h5 class="new-price">2 499 000 so'm</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 mb-3">
+            <div class="card" data-id="3">
+              <span class="heart bookmark-btn" id="bookmark" title="Tanlangan sifatida sevimli">
+                <i class="far fa-bookmark"></i>
+                <i class="fas fa-bookmark actived"></i>
+              </span>
+              <span class="heart select-btn" id="select" title="Tanlangan sifatida sevimli">
+                <i class="far fa-heart"></i>
+                <i class="fas fa-heart actived"></i>
+              </span>
+              <a class="card-link" href="product-view.html">
+                <img alt="Card image" class="card-img-top" src="img/product/tv.jfif" />
+              </a>
+              <div class="card-body">
+                <p class="card-text">Smartfon</p>
+                <h4 class="card-title">Samsung Galaxy S21 3/32GB white</h4>
+                <div class="reting">
+                  <svg class="active" fill="#FFC107" height="16px" version="1.1" viewbox="0 12.705 512 486.59"
+                    width="16px" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" y="0px">
+                    <polygon
+                      points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 ">
+                    </polygon>
+                  </svg>
+                  <svg class="active" fill="#FFC107" height="16px" version="1.1" viewbox="0 12.705 512 486.59"
+                    width="16px" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" y="0px">
+                    <polygon
+                      points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 ">
+                    </polygon>
+                  </svg>
+                  <svg class="active" fill="#FFC107" height="16px" version="1.1" viewbox="0 12.705 512 486.59"
+                    width="16px" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" y="0px">
+                    <polygon
+                      points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 ">
+                    </polygon>
+                  </svg>
+                  <svg class="active" fill="#FFC107" height="16px" version="1.1" viewbox="0 12.705 512 486.59"
+                    width="16px" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" y="0px">
+                    <polygon
+                      points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 ">
+                    </polygon>
+                  </svg>
+                  <svg fill="#FFC107" height="16px" version="1.1" viewbox="0 12.705 512 486.59" width="16px" x="0px"
+                    xml:space="preserve" xmlns="http://www.w3.org/2000/svg" y="0px">
+                    <polygon
+                      points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 ">
+                    </polygon>
+                  </svg>
+                </div>
+                <p class="old-price" style="
+                  text-decoration: line-through;">2 999 000 so'm</p>
+                <h5 class="new-price">2 499 000 so'm</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 mb-3">
+            <div class="card" data-id="4">
+              <span class="heart bookmark-btn" id="bookmark" title="Tanlangan sifatida sevimli">
+                <i class="far fa-bookmark"></i>
+                <i class="fas fa-bookmark actived"></i>
+              </span>
+              <span class="heart select-btn" id="select" title="Tanlangan sifatida sevimli">
+                <i class="far fa-heart"></i>
+                <i class="fas fa-heart actived"></i>
+              </span>
+              <a class="card-link" href="product-view.html">
+                <img alt="Card image" class="card-img-top" src="img/product/product1.jpeg" />
+              </a>
+              <div class="card-body">
+                <p class="card-text">Smartfon</p>
+                <h4 class="card-title">Samsung Galaxy S21 3/32GB white</h4>
+                <div class="reting">
+                  <svg class="active" fill="#FFC107" height="16px" version="1.1" viewbox="0 12.705 512 486.59"
+                    width="16px" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" y="0px">
+                    <polygon
+                      points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 ">
+                    </polygon>
+                  </svg>
+                  <svg class="active" fill="#FFC107" height="16px" version="1.1" viewbox="0 12.705 512 486.59"
+                    width="16px" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" y="0px">
+                    <polygon
+                      points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 ">
+                    </polygon>
+                  </svg>
+                  <svg class="active" fill="#FFC107" height="16px" version="1.1" viewbox="0 12.705 512 486.59"
+                    width="16px" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" y="0px">
+                    <polygon
+                      points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 ">
+                    </polygon>
+                  </svg>
+                  <svg class="active" fill="#FFC107" height="16px" version="1.1" viewbox="0 12.705 512 486.59"
+                    width="16px" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" y="0px">
+                    <polygon
+                      points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 ">
+                    </polygon>
+                  </svg>
+                  <svg fill="#FFC107" height="16px" version="1.1" viewbox="0 12.705 512 486.59" width="16px" x="0px"
+                    xml:space="preserve" xmlns="http://www.w3.org/2000/svg" y="0px">
+                    <polygon
+                      points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 ">
+                    </polygon>
+                  </svg>
+                </div>
+                <p class="old-price" style="
+                  text-decoration: line-through;">2 999 000 so'm</p>
+                <h5 class="new-price">2 499 000 so'm</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 mb-3">
+            <div class="card" data-id="5">
+              <span class="heart bookmark-btn" id="bookmark" title="Tanlangan sifatida sevimli">
+                <i class="far fa-bookmark"></i>
+                <i class="fas fa-bookmark actived"></i>
+              </span>
+              <span class="heart select-btn" id="select" title="Tanlangan sifatida sevimli">
+                <i class="far fa-heart"></i>
+                <i class="fas fa-heart actived"></i>
+              </span>
+              <a class="card-link" href="product-view.html">
+                <img alt="Card image" class="card-img-top" src="img/product/product1.jpeg" />
+              </a>
+              <div class="card-body">
+                <p class="card-text">Smartfon</p>
+                <h4 class="card-title">Samsung Galaxy S21 3/32GB white</h4>
+                <div class="reting">
+                  <svg class="active" fill="#FFC107" height="16px" version="1.1" viewbox="0 12.705 512 486.59"
+                    width="16px" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" y="0px">
+                    <polygon
+                      points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 ">
+                    </polygon>
+                  </svg>
+                  <svg class="active" fill="#FFC107" height="16px" version="1.1" viewbox="0 12.705 512 486.59"
+                    width="16px" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" y="0px">
+                    <polygon
+                      points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 ">
+                    </polygon>
+                  </svg>
+                  <svg class="active" fill="#FFC107" height="16px" version="1.1" viewbox="0 12.705 512 486.59"
+                    width="16px" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" y="0px">
+                    <polygon
+                      points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 ">
+                    </polygon>
+                  </svg>
+                  <svg class="active" fill="#FFC107" height="16px" version="1.1" viewbox="0 12.705 512 486.59"
+                    width="16px" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" y="0px">
+                    <polygon
+                      points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 ">
+                    </polygon>
+                  </svg>
+                  <svg fill="#FFC107" height="16px" version="1.1" viewbox="0 12.705 512 486.59" width="16px" x="0px"
+                    xml:space="preserve" xmlns="http://www.w3.org/2000/svg" y="0px">
+                    <polygon
+                      points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 ">
+                    </polygon>
+                  </svg>
+                </div>
+                <p class="old-price" style="
+                  text-decoration: line-through;">2 999 000 so'm</p>
+                <h5 class="new-price">2 499 000 so'm</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 mb-3">
+            <div class="card" data-id="6">
+              <span class="heart bookmark-btn" id="bookmark" title="Tanlangan sifatida sevimli">
+                <i class="far fa-bookmark"></i>
+                <i class="fas fa-bookmark actived"></i>
+              </span>
+              <span class="heart select-btn" id="select" title="Tanlangan sifatida sevimli">
+                <i class="far fa-heart"></i>
+                <i class="fas fa-heart actived"></i>
+              </span>
+              <a class="card-link" href="product-view.html">
+                <img alt="Card image" class="card-img-top" src="img/product/product1.jpeg" />
+              </a>
+              <div class="card-body">
+                <p class="card-text">Smartfon</p>
+                <h4 class="card-title">Samsung Galaxy S21 3/32GB white</h4>
+                <div class="reting">
+                  <svg class="active" fill="#FFC107" height="16px" version="1.1" viewbox="0 12.705 512 486.59"
+                    width="16px" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" y="0px">
+                    <polygon
+                      points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 ">
+                    </polygon>
+                  </svg>
+                  <svg class="active" fill="#FFC107" height="16px" version="1.1" viewbox="0 12.705 512 486.59"
+                    width="16px" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" y="0px">
+                    <polygon
+                      points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 ">
+                    </polygon>
+                  </svg>
+                  <svg class="active" fill="#FFC107" height="16px" version="1.1" viewbox="0 12.705 512 486.59"
+                    width="16px" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" y="0px">
+                    <polygon
+                      points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 ">
+                    </polygon>
+                  </svg>
+                  <svg class="active" fill="#FFC107" height="16px" version="1.1" viewbox="0 12.705 512 486.59"
+                    width="16px" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" y="0px">
+                    <polygon
+                      points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 ">
+                    </polygon>
+                  </svg>
+                  <svg fill="#FFC107" height="16px" version="1.1" viewbox="0 12.705 512 486.59" width="16px" x="0px"
+                    xml:space="preserve" xmlns="http://www.w3.org/2000/svg" y="0px">
+                    <polygon
+                      points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 ">
+                    </polygon>
+                  </svg>
+                </div>
+                <p class="old-price" style="
+                  text-decoration: line-through;">2 999 000 so'm</p>
+                <h5 class="new-price">2 499 000 so'm</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 mb-3">
+            <div class="card" data-id="7">
+              <span class="heart bookmark-btn" id="bookmark" title="Tanlangan sifatida sevimli">
+                <i class="far fa-bookmark"></i>
+                <i class="fas fa-bookmark actived"></i>
+              </span>
+              <span class="heart select-btn" id="select" title="Tanlangan sifatida sevimli">
+                <i class="far fa-heart"></i>
+                <i class="fas fa-heart actived"></i>
+              </span>
+              <a class="card-link" href="product-view.html">
+                <img alt="Card image" class="card-img-top" src="img/product/product1.jpeg" />
+              </a>
+              <div class="card-body">
+                <p class="card-text">Smartfon</p>
+                <h4 class="card-title">Samsung Galaxy S21 3/32GB white</h4>
+                <div class="reting">
+                  <svg class="active" fill="#FFC107" height="16px" version="1.1" viewbox="0 12.705 512 486.59"
+                    width="16px" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" y="0px">
+                    <polygon
+                      points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 ">
+                    </polygon>
+                  </svg>
+                  <svg class="active" fill="#FFC107" height="16px" version="1.1" viewbox="0 12.705 512 486.59"
+                    width="16px" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" y="0px">
+                    <polygon
+                      points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 ">
+                    </polygon>
+                  </svg>
+                  <svg class="active" fill="#FFC107" height="16px" version="1.1" viewbox="0 12.705 512 486.59"
+                    width="16px" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" y="0px">
+                    <polygon
+                      points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 ">
+                    </polygon>
+                  </svg>
+                  <svg class="active" fill="#FFC107" height="16px" version="1.1" viewbox="0 12.705 512 486.59"
+                    width="16px" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" y="0px">
+                    <polygon
+                      points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 ">
+                    </polygon>
+                  </svg>
+                  <svg fill="#FFC107" height="16px" version="1.1" viewbox="0 12.705 512 486.59" width="16px" x="0px"
+                    xml:space="preserve" xmlns="http://www.w3.org/2000/svg" y="0px">
+                    <polygon
+                      points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 ">
+                    </polygon>
+                  </svg>
+                </div>
+                <p class="old-price" style="
+                  text-decoration: line-through;">2 999 000 so'm</p>
+                <h5 class="new-price">2 499 000 so'm</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 mb-3">
+            <div class="card" data-id="8">
+              <span class="heart bookmark-btn" id="bookmark" title="Tanlangan sifatida sevimli">
+                <i class="far fa-bookmark"></i>
+                <i class="fas fa-bookmark actived"></i>
+              </span>
+              <span class="heart select-btn" id="select" title="Tanlangan sifatida sevimli">
+                <i class="far fa-heart"></i>
+                <i class="fas fa-heart actived"></i>
+              </span>
+              <a class="card-link" href="product-view.html">
+                <img alt="Card image" class="card-img-top" src="img/product/product1.jpeg" />
+              </a>
+              <div class="card-body">
+                <p class="card-text">Smartfon</p>
+                <h4 class="card-title">Samsung Galaxy S21 3/32GB white</h4>
+                <div class="reting">
+                  <svg class="active" fill="#FFC107" height="16px" version="1.1" viewbox="0 12.705 512 486.59"
+                    width="16px" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" y="0px">
+                    <polygon
+                      points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 ">
+                    </polygon>
+                  </svg>
+                  <svg class="active" fill="#FFC107" height="16px" version="1.1" viewbox="0 12.705 512 486.59"
+                    width="16px" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" y="0px">
+                    <polygon
+                      points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 ">
+                    </polygon>
+                  </svg>
+                  <svg class="active" fill="#FFC107" height="16px" version="1.1" viewbox="0 12.705 512 486.59"
+                    width="16px" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" y="0px">
+                    <polygon
+                      points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 ">
+                    </polygon>
+                  </svg>
+                  <svg class="active" fill="#FFC107" height="16px" version="1.1" viewbox="0 12.705 512 486.59"
+                    width="16px" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" y="0px">
+                    <polygon
+                      points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 ">
+                    </polygon>
+                  </svg>
+                  <svg fill="#FFC107" height="16px" version="1.1" viewbox="0 12.705 512 486.59" width="16px" x="0px"
+                    xml:space="preserve" xmlns="http://www.w3.org/2000/svg" y="0px">
+                    <polygon
+                      points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 ">
+                    </polygon>
+                  </svg>
+                </div>
+                <p class="old-price" style="
+                  text-decoration: line-through;">2 999 000 so'm</p>
+                <h5 class="new-price">2 499 000 so'm</h5>
+              </div>
+            </div>
+          </div>
+          <!-- Cards-close -->
+        </div>
+        <!-- Cards-close -->
+      </div>
+    </div>
+  </main>
+  <!-- Main-content-close -->
+
+  <!-- Site-footer-open -->
+  <footer>
+    <div class="container">
+      <div class="row site-footer-wrapper py-5 px-2">
+        <div class="col-md-4 mb-3">
+          <a class="logo" href="index.html">
+            <img src="img/logo.png"  alt="Logo">
+          </a>
+          <p>FastSale store © 2021 barcha huquqlar himoyalangan</p>
+        </div>
+        <div class="col-md-4 mb-3">
+          <ul class="nav">
+            <li class="nav-item">
+              <a href="#"> Shaxsiy ma'lumotlar bilan ishlash </a>
+            </li>
+            <li class="nav-item">
+              <a href="#"> Yordam </a>
+            </li>
+            <li class="nav-item">
+              <a href="#"> Mo'ddatli to'lov shartlari </a>
+            </li>
+            <li class="nav-item">
+              <a href="#"> Biz haqimizda </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <div class="call">
+            <h5>Ishonch raqami</h5>
+            <h4>+998(99)735-78-19</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Site-footer-close -->
+
+  <div class="overlay" style="display: none;"></div>
+  <!--Jquery-->
+  <script src="js/jquery-slim.min.js"></script>
+  <script src="js/jquery-ui.min.js"></script>
+  <!--Bootstrap-->
+  <script src="js/bootstrap.min.js"></script>
+  <!--Slick-product-->
+  <script src="js/slick.min.js"></script>
+  <!--Swiper-->
+  <script src="js/swiper-bundle.min.js"></script>
+  <!--Fancyapp-->
+  <script src="js/fancybox.umd.js"></script>
+  <!--App-js-->
+  <script src="js/app.js"></script>
+</body>
+
+</html>

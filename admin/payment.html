@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8"/>
+  <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <!--Favicon-->
+  <link rel="shortcut icon" href="../favicon.png" type="image/x-icon"/>
+  <!-- Font awesome 5 -->
+  <link href="../css/all.min.css" rel="stylesheet"/>
+  <!-- Bootstrap4 -->
+  <link href="../css/bootstrap.min.css" rel="stylesheet"/>
+  <!--  Slick-slider-->
+  <link href="../css/slick.css" rel="stylesheet"/>
+  <link href="../css/slick-theme.css" rel="stylesheet"/>
+  <!--Swiper-->
+  <link href="../css/swiper-bundle.min.css" rel="stylesheet"/>
+  <!--Fancyapp-->
+  <link href="../css/fancybox.min.css" rel="stylesheet"/>
+  <!-- Main css -->
+  <link href="../css/main.css" rel="stylesheet"/>
+  <title>MirSavdo.uz|Linker</title>
+</head>
+
+<body class="profile-page">
+  <!--Background-open-->
+  <div class="background"></div>
+  <!--Background-close-->
+
+  <!-- Header-open -->
+  <header>
+    <div class="container">
+      <div class="auto-content">
+        <nav class="navbar navbar-expand-sm bg-light">
+          <!-- logo-open -->
+          <div class="prev-box">
+            <a class="navbar-brand" href="../index.html">
+              <img alt="" src="../img/logo.svg"/>
+            </a>
+            <button class="btn history-prev">
+              <i class="fal fa-angle-left fa-2x"></i>
+            </button>
+          </div>
+          <!-- logo-close -->
+          <h3 class="mobile-title ml-auto mr-auto">To'lov</h3>
+          <!-- navbar-nav-open -->
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">
+                <i class="fal fa-tachometer-alt-fast"></i>
+                <span class="btn-text"> Dashboard </span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="market.html">
+                <i class="fal fa-store"></i>
+                <span class="btn-text"> Market </span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="stream.html">
+                <i class="fal fa-link"></i>
+                <span class="btn-text"> Oqim </span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="statistics.html">
+                <i class="fal fa-chart-line"></i>
+                <span class="btn-text"> Statistika</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="payment.html">
+                <i class="fal fa-wallet"></i>
+                <span class="btn-text"> To'lov </span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <div class="dropdown">
+                <a href="#" class="nav-link" type="button dropdown-toggle" data-toggle="dropdown">
+                  <i class="fal fa-user"></i>
+                  <span class="btn-text"> Kirish </span>
+                </a>
+                <div class="dropdown-menu">
+                  <a href="../profile/index.html" class="dropdown-item"><i class="fal fa-user"></i>&nbsp;Profil</a>
+                  <a href="../register.html" class="dropdown-item"><i class="fal fa-user-plus"></i>&nbsp;Ro'yxatdan o'tish</a>
+                  <a href="../admin/index.html" class="dropdown-item"><span class="fal fa-users"></span>&nbsp;Admin uchun</a>
+                  <a href="../profile/settings.html" class="dropdown-item"><span class="fal fa-cog"></span>&nbsp;Sozlamalar</a>
+                </div>
+                <div class="drop-overlay"></div>
+              </div>
+            </li>
+          </ul>
+          <!-- navbar-nav-close -->
+        </nav>
+      </div>
+    </div>
+  </header>
+  <!-- Header-close -->
+
+  <!-- Main-content-open -->
+  <main class="mt-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 profile-main--inner admin-main--inner">
+          <div class="profile-main--body">
+            <div class="row">
+              <div class="col-md-6 mb-5">
+                <h4 class="font-weight-normal">Mening hisobim</h4>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">
+                    Asosiy balansda 
+                    <span class="badge">0 so'm</span>
+                  </li>
+                  <li class="list-group-item">
+                    Depozit balansda 
+                    <span class="badge">0 so'm</span>
+                  </li>
+                  <li class="list-group-item">
+                    To'lab berildi 
+                    <span class="badge">0 so'm</span>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="col-md-6">
+                <div class="card w-100">
+                  <div class="card-header">
+                    Hisob raqam 
+                  </div>
+                  <div class="card-body">
+                    <!-- form-open -->
+                    <form class="needs-validation" novalidate action="#">
+                      <div class="form-group">
+                        <label for="uname">Karta raqamini kiriting</label>
+                        <input type="text" class="form-control" id="uname" placeholder="Karta raqamingizni kiriting" data-mask="0000-0000-0000-0000" required>
+                        <div class="valid-feedback">Yaxshi</div>
+                        <div class="invalid-feedback">Iltimos bu joy bo'sh qoldirmang</div>
+                      </div>
+                      <div class="form-group">
+                        <label for="uname">Summani kiriting</label>
+                        <input type="text" class="form-control" id="uname" placeholder="Summani kiriting" data-mask="000000000000000000000000" required>
+                        <div class="valid-feedback">Yaxshi</div>
+                        <div class="invalid-feedback">Iltimos bu joy bo'sh qoldirmang</div>
+                      </div>
+                      <button class="btn btn-warning px-5" type="submit">Tasdiqlash</button>
+                    </form>
+                    <!-- form-close -->
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 mt-5 p-0">
+                <table class="table table-striped table-hover table-responsive-sm">
+                  <tr class="bg-warning">
+                    <th>Sanasi</th>
+                    <th>Hisob raqam</th>
+                    <th>Summa</th>
+                    <th>Holat</th>
+                  </tr>
+  
+                  <!-- <tr>
+                    <td>27.08.21</td>
+                    <td>1234&nbsp;1234&nbsp;1234&nbsp;1234</td>
+                    <td>299,000</td>
+                    <td>unknown</td>
+                  </tr> -->
+                </table>
+                <p class="text-center">
+                  Hozircha sizda pul yechish so'rovlari mavjud emas.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <!-- Main-content-close -->
+
+  <!--Jquery-->
+  <script src="../js/jquery-slim.min.js"></script>
+  <script src="../js/jquery-ui.min.js"></script>
+  <!-- Mask -->
+  <script src="../js/imask/jquery.mask.min.js"></script>
+  <!--Bootstrap-->
+  <script src="../js/popover.js"></script>
+  <script src="../js/bootstrap.min.js"></script>
+  <!--Slick-product-->
+  <script src="../js/slick.min.js"></script>
+  <!--Swiper-->
+  <script src="../js/swiper-bundle.min.js"></script>
+  <!--Fancyapp-->
+  <script src="../js/fancybox.umd.js"></script>
+  <!--App-js-->
+  <script src="../js/app.js"></script>
+</body>
+
+</html>

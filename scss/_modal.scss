@@ -1,0 +1,50 @@
+.modal{
+  z-index: 1054;
+}
+.modal-backdrop {
+  z-index: 1053;
+}
+.input-group.input-point {
+  width: 100px;
+}
+
+// Profile-page
+.profile-page {
+  .modal {
+    .alert {
+      display: none;
+    }
+    .fa-copy {
+      display: none;
+    }
+    .loader {
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: none;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      background-color: $grayGlassBg;
+      z-index: 1;
+    }
+  }
+  .modal.load {
+    .loader {
+      display: flex;
+    }
+  }
+  .modal.linker-done {
+    .alert {
+      display: block;
+    }
+    .fa-copy {
+      display: inline-block;
+    }
+    .fa-plus {
+      display: none;
+    }
+  }
+
+}

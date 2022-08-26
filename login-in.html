@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!--Favicon-->
+  <link rel="shortcut icon" href="favicon.png" type="image/x-icon"/>
+  <!-- Bootstrap4 -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- Webfonts icon -->
+  <link rel="stylesheet" href="css/all.min.css">
+  <!-- Main css -->
+  <link rel="stylesheet" href="css/main.css">
+  <title>FastSale.uz</title>
+</head>
+<body class="login-page">
+
+<!--Background-open-->
+<div class="background"></div>
+<!--Background-close-->
+
+<!--Main-open-->
+<main>
+  <div class="form-panel">
+    <!-- Form-open -->
+    <form class="form-horizontal" action="#">
+      <h4 class="form-title"><i class="fas fa-sign-in-alt mr-2"></i> Kirish</h4>
+      <div class="form-group has-success">
+        <label class="control-label" for="phone">Telifon</label>
+        <input type="text" class="form-control js-phone-mask" id="phone" placeholder="+998(__)-___-__-__"
+               data-mask="+998(00)-000-00-00">
+      </div>
+      <div class="form-group">
+        <label class="control-label" for="pwd">Parol</label>
+        <input type="password" class="form-control mb-2" id="pwd" placeholder="Parolni kiriting">
+        <a class="reset-link" href="reset.html">Parolni unutdingizmi?</a>
+      </div>
+      <div class="form-group">
+        <div class="checkbox">
+          <label><input type="checkbox"> Meni eslab qol</label>
+        </div>
+      </div>
+      <div class="form-group">
+        <button type="submit" class="btn btn-warning col-12">Kirish</button>
+      </div>
+      <div class="form-group">
+        <a type="button" href="register.html" class="btn btn-outline-secondary col-12">Ro'yxatdan o'tish</a>
+      </div>
+    </form>
+    <!-- Form-close -->
+  </div>
+</main>
+<!--Main-close-->
+<script src="js/jquery-slim.min.js"></script>
+<script src="js/imask/jquery.mask.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

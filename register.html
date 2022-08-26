@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta ame="viewport" content="width=`, initial-scale=1.0">
+   <!--Favicon-->
+  <link rel="shortcut icon" href="favicon.png" type="image/x-icon"/>
+  <!-- Bootstrap4 -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- Webfonts icon -->
+  <link rel="stylesheet" href="css/all.min.css">
+  <!-- Main css -->
+  <link rel="stylesheet" href="css/main.css">
+  <title>FastSale.uz</title>
+</head>
+<body class="login-page">
+<!--Background-open-->
+<div class="background"></div>
+<!--Background-close-->
+
+<!--Main-open-->
+<main>
+    <div class="form-panel">
+      <!-- Form-open -->
+      <form class="form-horizontal" action="#">
+        <h4 class="form-title mb-3"><i class="fas fa-user-plus mr-2"></i> Ro'yxatdan o'tish</h4>
+        <div class="form-group has-success">
+          <label class="control-label" for="phone">Telifon</label>
+          <input type="text" class="form-control js-phone-mask" id="phone" placeholder="+998(__)-___-__-__"
+                 data-mask="+998(00)-000-00-00">
+        </div>
+        <p class="form-text">
+          Aktivatsiya kodini olish uchun telefon raqamingizni kiriting.
+        </p>
+        <!-- Telifon raqam jo'natilganda chiqadi -->
+        <div class="form-group" style="display: none;">
+          <label class="control-label" for="pwd">Kod</label>
+          <input type="password" class="form-control mb-2" id="pwd" placeholder="_-_-_-_-_" data-mask="00000">
+        </div>
+        <div class="form-group">
+          <button type="submit" class="btn btn-warning col-12">Aktivatsiya kodini olish</button>
+        </div>
+        <p>
+          Ro'yxatdan o'tganmisiz?
+          <a class="reset-link" href="reset.html">Kirish</a>
+        </p>
+      </form>
+      <!-- Form-close -->
+    </div>
+</main>
+<!--Main-close-->
+
+<script src="js/jquery-slim.min.js"></script>
+<script src="js/imask/jquery.mask.min.js"></script>
+<script src="js/popover.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

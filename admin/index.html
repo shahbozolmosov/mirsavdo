@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8"/>
+  <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <!--Favicon-->
+  <link rel="shortcut icon" href="../favicon.png" type="image/x-icon"/>
+  <!-- Font awesome 5 -->
+  <link href="../css/all.min.css" rel="stylesheet"/>
+  <!-- Bootstrap4 -->
+  <link href="../css/bootstrap.min.css" rel="stylesheet"/>
+  <!--  Slick-slider-->
+  <link href="../css/slick.css" rel="stylesheet"/>
+  <link href="../css/slick-theme.css" rel="stylesheet"/>
+  <!--Swiper-->
+  <link href="../css/swiper-bundle.min.css" rel="stylesheet"/>
+  <!--Fancyapp-->
+  <link href="../css/fancybox.min.css" rel="stylesheet"/>
+  <!-- Main css -->
+  <link href="../css/main.css" rel="stylesheet"/>
+  <title>MirSavdo.uz|Admin</title>
+</head>
+
+<body class="profile-page">
+<!--Background-open-->
+<div class="background"></div>
+<!--Background-close-->
+
+<!-- Header-open -->
+<header>
+  <div class="container">
+    <div class="auto-content">
+      <nav class="navbar navbar-expand-sm bg-light">
+        <!-- logo-open -->
+        <div class="prev-box">
+          <a class="navbar-brand" href="../index.html">
+            <img alt="" src="../img/logo.svg"/>
+          </a>
+          <button class="btn history-prev">
+            <i class="fal fa-angle-left fa-2x"></i>
+          </button>
+        </div>
+        <!-- logo-close -->
+        <h3 class="mobile-title ml-auto mr-auto">Dashboard</h3>
+        <!-- navbar-nav-open -->
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">
+              <i class="fal fa-tachometer-alt-fast"></i>
+              <span class="btn-text"> Dashboard </span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="market.html">
+              <i class="fal fa-store"></i>
+              <span class="btn-text"> Market </span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="stream.html">
+              <i class="fal fa-link"></i>
+              <span class="btn-text"> Oqim </span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="statistics.html">
+              <i class="fal fa-chart-line"></i>
+              <span class="btn-text"> Statistika</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="payment.html">
+              <i class="fal fa-wallet"></i>
+              <span class="btn-text"> To'lov </span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <div class="dropdown">
+              <a href="#" class="nav-link" type="button dropdown-toggle" data-toggle="dropdown">
+                <i class="fal fa-user"></i>
+                <span class="btn-text"> Kirish </span>
+              </a>
+              <div class="dropdown-menu">
+                <a href="../profile/index.html" class="dropdown-item"><i class="fal fa-user"></i>&nbsp;Profil</a>
+                <a href="../register.html" class="dropdown-item"><i class="fal fa-user-plus"></i>&nbsp;Ro'yxatdan o'tish</a>
+                <a href="../admin/index.html" class="dropdown-item"><span class="fal fa-users"></span>&nbsp;Admin uchun</a>
+                <a href="../profile/settings.html" class="dropdown-item"><span class="fal fa-cog"></span>&nbsp;Sozlamalar</a>
+              </div>
+              <div class="drop-overlay"></div>
+            </div>
+          </li>
+        </ul>
+        <!-- navbar-nav-close -->
+      </nav>
+    </div>
+  </div>
+</header>
+<!-- Header-close -->
+
+<!-- Main-content-open -->
+<main>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 profile-main--inner admin-main--inner">
+        <div class="profile-main--header">
+          <div class="avatar">
+            <img src="../img/user.svg" id="upload-img" alt="User image" data-fancybox="gallery">
+          </div>
+          <h3 class="avatar-name">John Doe</h3>
+        </div>
+        <div class="profile-main--body">
+          <div class="col-md-6 offset-md-3 body-card p-3 mb-5">
+            <p>Hisobingizda</p>
+            <h3>0 so'm</h3>
+            <p>**** **** **** 1234</p>
+            <h3 class="profile-main--body-title">John Doe</h3>
+          </div>
+          <div class="row body-wrapper">
+            <div class="col-md-3 mb-4">
+              <div class="card">
+                <a href="about.html"></a>
+                <i class="fal fa-info-circle fa-2x"></i>
+                Dastur haqida
+              </div>
+            </div>
+            <div class="col-md-3 mb-4">
+              <div class="card">
+                <a href="team.html"></a>
+                <i class="fal fa-users fa-2x"></i>
+                Mening jamoam
+              </div>
+            </div>
+            <div class="col-md-3 mb-4">
+              <div class="card">
+                <a href="requests.html"></a>
+                <i class="fal fa-comment-lines fa-2x"></i>
+                So'rovlar
+              </div>
+            </div>
+            <div class="col-md-3 mb-4">
+              <div class="card">
+                <a href="payment-history.html"></a>
+                <i class="fal fa-wallet fa-2x"></i>
+                Balans tarixi
+              </div>
+            </div>
+            <div class="col-md-3 mb-4">
+              <div class="card">
+                <a href="redirects.html"></a>
+                <i class="fal fa-link fa-2x"></i>
+                Linker
+              </div>
+            </div>
+            <div class="col-md-3 mb-4">
+              <div class="card">
+                <a href="charts.html"></a>
+                <i class="fal fa-chart-pie fa-2x"></i>
+                Diagramma
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+<!-- Main-content-close -->
+
+<!--Jquery-->
+<script src="../js/jquery-slim.min.js"></script>
+<script src="../js/jquery-ui.min.js"></script>
+<!--Bootstrap-->
+<script src="../js/popover.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<!--Slick-product-->
+<script src="../js/slick.min.js"></script>
+<!--Swiper-->
+<script src="../js/swiper-bundle.min.js"></script>
+<!--Fancyapp-->
+<script src="../js/fancybox.umd.js"></script>
+<!--App-js-->
+<script src="../js/app.js"></script>
+</body>
+
+</html>

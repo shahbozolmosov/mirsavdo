@@ -1,0 +1,211 @@
+%inputWarningShadow {
+  box-shadow: 0 0 0 0.2rem rgba(255, 193, 7, 0.42);
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #000;
+  border-radius: 0px;
+  opacity: 0;
+  transition: background-color 1s ease;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #747474;
+  transition: background-color 1s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #a2a2a2;
+}
+
+a {
+  color: $linkColor;
+}
+
+img {
+  width: 100%;
+}
+
+a:hover {
+  color: $linkColor;
+  text-decoration: none;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+
+ul {
+  padding: 0;
+
+  li {
+    list-style: none;
+  }
+}
+
+body {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+  main {
+    flex-grow: 1;
+  }
+}
+.background {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+
+  &::before {
+    display: block;
+    width: 100%;
+    height: 40%;
+    background-color: $yellow;
+    content: "";
+  }
+
+  &::after {
+    display: block;
+    width: 100%;
+    height: 60%;
+    background-color: $grayBg;
+    content: "";
+  }
+}
+
+.logo {
+  display: inline-block;
+  max-width: 120px;
+  width: 100%;
+  img {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    &:hover {
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    }
+  }
+}
+
+.slider {
+  padding: 0 40px;
+
+  .arrow-btn {
+    height: 100%;
+    position: absolute;
+    border: none;
+    top: 0;
+    z-index: 200;
+
+  }
+
+  .btn-prev {
+    left: 0;
+  }
+
+  .btn-next {
+    right: 0;
+  }
+}
+
+.fancybox__container {
+  z-index: 1053;
+}
+
+.fancybox__thumbs {
+  display: none;
+}
+
+.reting {
+  svg {
+    fill: $grayBg;
+  }
+
+  svg.active {
+    fill: $yellow;
+  }
+}
+
+.form-control,
+.custom-select {
+  border-color: $yellow;
+}
+
+.form-control:focus,
+.custom-select:focus {
+  @extend %inputWarningShadow;
+  border-color: $yellow;
+  outline: none;
+}
+
+.form-control[readonly] {
+  border-color: $yellow;
+  box-shadow: none;
+}
+
+%stopSctoll {
+  height: 100%;
+  overflow: hidden;
+}
+
+.mobile-title {
+  display: none;
+}
+
+.btn-angle {
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  transform: translateY(-50%);
+  height: 24px;
+  width: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: white;
+
+  i {
+    color: #000;
+    transition: all 0.3s ease-in-out;
+  }
+}
+
+.stop-scrolling {
+  @extend %stopSctoll;
+}
+
+button.btn:focus {
+  box-shadow: none;
+}
+
+.history-selected {
+  width: 100%;
+  min-height: 300px;
+  height: 100%;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: $grayBg;
+  &.show {
+    display: flex;
+  }
+}
+

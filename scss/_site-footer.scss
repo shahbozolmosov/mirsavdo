@@ -1,0 +1,32 @@
+footer {
+  .row {
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin: 0;
+    background-color: $grayHoverBg;
+  }
+  .logo {
+    width: 140px;
+  }
+
+  .nav {
+    display: flex;
+    flex-direction: column;
+    .nav-item {
+      a {
+        display: inline-block;
+        margin-bottom: 8px;
+        &:hover {
+          color: $yellow;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  .call {
+    padding: 12px 16px;
+    background-color: $cardBgColor;
+  }
+}

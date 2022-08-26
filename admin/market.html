@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8"/>
+  <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <!--Favicon-->
+  <link rel="shortcut icon" href="../favicon.png" type="image/x-icon"/>
+  <!-- Font awesome 5 -->
+  <link href="../css/all.min.css" rel="stylesheet"/>
+  <!-- Bootstrap4 -->
+  <link href="../css/bootstrap.min.css" rel="stylesheet"/>
+  <!--  Slick-slider-->
+  <link href="../css/slick.css" rel="stylesheet"/>
+  <link href="../css/slick-theme.css" rel="stylesheet"/>
+  <!--Swiper-->
+  <link href="../css/swiper-bundle.min.css" rel="stylesheet"/>
+  <!--Fancyapp-->
+  <link href="../css/fancybox.min.css" rel="stylesheet"/>
+  <!-- Main css -->
+  <link href="../css/main.css" rel="stylesheet"/>
+  <title>MirSavdo.uz|Market</title>
+</head>
+
+<body class="profile-page">
+<!--Background-open-->
+<div class="background"></div>
+<!--Background-close-->
+<div class="modal fade" id="streamModal" tabindex="-1" rol="dialog" aria-labelledby="streamModalLabel" aria-hidden="true">
+  <div class="modal-dialog" rol="document">
+    <!-- form-open -->
+      <div class="modal-content">
+        <div class="loader">
+          <div class="spinner-border text-warning"></div>
+        </div>
+        <div class="modal-header">
+          <h5 class="modal-title" id="linkerModalLabel">Mahsulot nomi</h5>
+          <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <form class="needs-validation" novalidate action="#">
+          <div class="modal-body">
+              <div class="alert alert-success">
+                <strong>Oqim yaratildi!</strong><br>
+                Quyidagi tugma orqali "manzilni" nusxasini ko'chirib oling.
+              </div>
+              <div class="form-group">
+                <label for="name">Oqim nomi</label>
+                <input class="form-control disabled" type="text" placeholder="Oqim nomini kiriting" required>
+                <div class="valid-feedback">Yaxshi</div>
+                <div class="invalid-feedback">Iltimos bu joy bo'sh qoldirmang</div>
+              </div>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-success" type="submit">
+              <i class="fas fa-copy"></i>
+              <i class="fas fa-plus"></i>
+              <span class="modal-btn-text">
+                Oqim yaratish
+              </span>
+            </button>
+          </div>
+        </form> 
+      </div>
+    <!-- form-close -->
+  </div>
+</div>
+<!-- Header-open -->
+<header>
+  <div class="container">
+    <div class="auto-content">
+      <nav class="navbar navbar-expand-sm bg-light">
+        <!-- logo-open -->
+        <div class="prev-box">
+          <a class="navbar-brand" href="../index.html">
+            <img alt="" src="../img/logo.svg"/>
+          </a>
+          <button class="btn history-prev">
+            <i class="fal fa-angle-left fa-2x"></i>
+          </button>
+        </div>
+        <!-- logo-close -->
+        <h3 class="mobile-title ml-auto mr-auto">Market</h3>
+        <!-- navbar-nav-open -->
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">
+              <i class="fal fa-tachometer-alt-fast"></i>
+              <span class="btn-text"> Dashboard </span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="market.html">
+              <i class="fal fa-store"></i>
+              <span class="btn-text"> Market </span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="stream.html">
+              <i class="fal fa-link"></i>
+              <span class="btn-text"> Oqim </span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="statistics.html">
+              <i class="fal fa-chart-line"></i>
+              <span class="btn-text"> Statistika</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="payment.html">
+              <i class="fal fa-wallet"></i>
+              <span class="btn-text"> To'lov </span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <div class="dropdown">
+              <a href="#" class="nav-link" type="button dropdown-toggle" data-toggle="dropdown">
+                <i class="fal fa-user"></i>
+                <span class="btn-text"> Kirish </span>
+              </a>
+              <div class="dropdown-menu">
+                <a href="../profile/index.html" class="dropdown-item"><i class="fal fa-user"></i>&nbsp;Profil</a>
+                <a href="../register.html" class="dropdown-item"><i class="fal fa-user-plus"></i>&nbsp;Ro'yxatdan o'tish</a>
+                <a href="../admin/index.html" class="dropdown-item"><span class="fal fa-users"></span>&nbsp;Admin uchun</a>
+                <a href="../profile/settings.html" class="dropdown-item"><span class="fal fa-cog"></span>&nbsp;Sozlamalar</a>
+              </div>
+              <div class="drop-overlay"></div>
+            </div>
+          </li>
+        </ul>
+        <!-- navbar-nav-close -->
+      </nav>
+    </div>
+    <div class="form-content mt-5">
+      <!-- form-open -->
+      <form action="#">
+        <div class="form-row m-0">
+          <div class="input-group col-sm-6 offset-sm-3 col-10 offset-1">
+            <input class="form-control" type="text" placeholder="Nima izlaymiz">
+            <div class="input-group-append">
+              <button class="btn btn-primary" type="button">
+                <i class="fal fa-search"></i>
+                <span class="btn-text">Qidirish</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </form>
+      <!-- form-close -->
+    </div>
+    <div class="categore-slider">
+      <ul class="nav wrapper-nav slider">
+        <li class="nav-item">
+          <a class="nav-link" href="#"> Samsung </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"> Xiaome </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"> Telifon </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"> Oshxona jihozlari </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"> Noutbook </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"> Kompyuter </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"> Aksisuarlar </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"> Uy jihozlari </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"> Aqilli soatlar </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"> Bolalar kiyimlari </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</header>
+<!-- Header-close -->
+
+<!-- Main-content-open -->
+<main class="mt-5">
+  <div class="container">
+    <div class="row d-flex justify-content-sm-start justify-content-center market-wrapper">
+      <div class="col-lg-3 col-md-4 col-sm-6 col-12 market-wrapper-item">
+        <div class="card">
+          <a class="card-link" href="product-view.html">
+            <img alt="Card image" class="card-img-top" src="../img/product/product1.jpeg"/>
+          </a>
+          <div class="card-body">
+            <p class="card-text">Smartfon</p>
+            <h4 class="card-title">Samsung Galaxy S21 3/32GB white</h4>
+            <div class="reting">
+              <svg class="active" fill="#FFC107" height="16px" version="1.1" viewbox="0 12.705 512 486.59"
+                   width="16px" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" y="0px">
+                  <polygon
+                      points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 ">
+                  </polygon>
+              </svg>
+              <svg class="active" fill="#FFC107" height="16px" version="1.1" viewbox="0 12.705 512 486.59"
+                   width="16px" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" y="0px">
+                  <polygon
+                      points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 ">
+                  </polygon>
+              </svg>
+              <svg class="active" fill="#FFC107" height="16px" version="1.1" viewbox="0 12.705 512 486.59"
+                   width="16px" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" y="0px">
+                  <polygon
+                      points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 ">
+                  </polygon>
+              </svg>
+              <svg class="active" fill="#FFC107" height="16px" version="1.1" viewbox="0 12.705 512 486.59"
+                   width="16px" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" y="0px">
+                  <polygon
+                      points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 ">
+                  </polygon>
+              </svg>
+              <svg fill="#FFC107" height="16px" version="1.1" viewbox="0 12.705 512 486.59" width="16px" x="0px"
+                   xml:space="preserve" xmlns="http://www.w3.org/2000/svg" y="0px">
+                  <polygon
+                      points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 ">
+                  </polygon>
+              </svg>
+            </div>
+            <p class="old-price" style="text-decoration: line-through;">2 999 000 so'm</p>
+            <h5 class="new-price">2 499 000 so'm</h5>
+            <button class="btn btn-warning" type="button" data-toggle="modal" data-target="#streamModal">Oqim yaratish</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-6 col-12 market-wrapper-item">
+        <div class="card">
+          <a class="card-link" href="product-view.html">
+            <img alt="Card image" class="card-img-top" src="../img/product/product1.jpeg"/>
+          </a>
+          <div class="card-body">
+            <p class="card-text">Smartfon</p>
+            <h4 class="card-title">Samsung Galaxy S21 3/32GB white</h4>
+            <div class="reting">
+              <svg class="active" fill="#FFC107" height="16px" version="1.1" viewbox="0 12.705 512 486.59"
+                   width="16px" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" y="0px">
+                  <polygon
+                      points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 ">
+                  </polygon>
+              </svg>
+              <svg class="active" fill="#FFC107" height="16px" version="1.1" viewbox="0 12.705 512 486.59"
+                   width="16px" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" y="0px">
+                  <polygon
+                      points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 ">
+                  </polygon>
+              </svg>
+              <svg class="active" fill="#FFC107" height="16px" version="1.1" viewbox="0 12.705 512 486.59"
+                   width="16px" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" y="0px">
+                  <polygon
+                      points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 ">
+                  </polygon>
+              </svg>
+              <svg class="active" fill="#FFC107" height="16px" version="1.1" viewbox="0 12.705 512 486.59"
+                   width="16px" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" y="0px">
+                  <polygon
+                      points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 ">
+                  </polygon>
+              </svg>
+              <svg fill="#FFC107" height="16px" version="1.1" viewbox="0 12.705 512 486.59" width="16px" x="0px"
+                   xml:space="preserve" xmlns="http://www.w3.org/2000/svg" y="0px">
+                  <polygon
+                      points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 ">
+                  </polygon>
+              </svg>
+            </div>
+            <p class="old-price" style="text-decoration: line-through;">2 999 000 so'm</p>
+            <h5 class="new-price">2 499 000 so'm</h5>
+            <button class="btn btn-warning" type="button" data-toggle="modal" data-target="#streamModal">Oqim yaratish</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-6 col-12 market-wrapper-item">
+        <div class="card">
+          <a class="card-link" href="product-view.html">
+            <img alt="Card image" class="card-img-top" src="../img/product/product1.jpeg"/>
+          </a>
+          <div class="card-body">
+            <p class="card-text">Smartfon</p>
+            <h4 class="card-title">Samsung Galaxy S21 3/32GB white</h4>
+            <div class="reting">
+              <svg class="active" fill="#FFC107" height="16px" version="1.1" viewbox="0 12.705 512 486.59"
+                   width="16px" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" y="0px">
+                  <polygon
+                      points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 ">
+                  </polygon>
+              </svg>
+              <svg class="active" fill="#FFC107" height="16px" version="1.1" viewbox="0 12.705 512 486.59"
+                   width="16px" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" y="0px">
+                  <polygon
+                      points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 ">
+                  </polygon>
+              </svg>
+              <svg class="active" fill="#FFC107" height="16px" version="1.1" viewbox="0 12.705 512 486.59"
+                   width="16px" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" y="0px">
+                  <polygon
+                      points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 ">
+                  </polygon>
+              </svg>
+              <svg class="active" fill="#FFC107" height="16px" version="1.1" viewbox="0 12.705 512 486.59"
+                   width="16px" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" y="0px">
+                  <polygon
+                      points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 ">
+                  </polygon>
+              </svg>
+              <svg fill="#FFC107" height="16px" version="1.1" viewbox="0 12.705 512 486.59" width="16px" x="0px"
+                   xml:space="preserve" xmlns="http://www.w3.org/2000/svg" y="0px">
+                  <polygon
+                      points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 ">
+                  </polygon>
+              </svg>
+            </div>
+            <p class="old-price" style="text-decoration: line-through;">2 999 000 so'm</p>
+            <h5 class="new-price">2 499 000 so'm</h5>
+            <button class="btn btn-warning" type="button" data-toggle="modal" data-target="#streamModal">Oqim yaratish</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-6 col-12 market-wrapper-item">
+        <div class="card">
+          <a class="card-link" href="product-view.html">
+            <img alt="Card image" class="card-img-top" src="../img/product/product1.jpeg"/>
+          </a>
+          <div class="card-body">
+            <p class="card-text">Smartfon</p>
+            <h4 class="card-title">Samsung Galaxy S21 3/32GB white</h4>
+            <div class="reting">
+              <svg class="active" fill="#FFC107" height="16px" version="1.1" viewbox="0 12.705 512 486.59"
+                   width="16px" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" y="0px">
+                  <polygon
+                      points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 ">
+                  </polygon>
+              </svg>
+              <svg class="active" fill="#FFC107" height="16px" version="1.1" viewbox="0 12.705 512 486.59"
+                   width="16px" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" y="0px">
+                  <polygon
+                      points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 ">
+                  </polygon>
+              </svg>
+              <svg class="active" fill="#FFC107" height="16px" version="1.1" viewbox="0 12.705 512 486.59"
+                   width="16px" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" y="0px">
+                  <polygon
+                      points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 ">
+                  </polygon>
+              </svg>
+              <svg class="active" fill="#FFC107" height="16px" version="1.1" viewbox="0 12.705 512 486.59"
+                   width="16px" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" y="0px">
+                  <polygon
+                      points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 ">
+                  </polygon>
+              </svg>
+              <svg fill="#FFC107" height="16px" version="1.1" viewbox="0 12.705 512 486.59" width="16px" x="0px"
+                   xml:space="preserve" xmlns="http://www.w3.org/2000/svg" y="0px">
+                  <polygon
+                      points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 ">
+                  </polygon>
+              </svg>
+            </div>
+            <p class="old-price" style="text-decoration: line-through;">2 999 000 so'm</p>
+            <h5 class="new-price">2 499 000 so'm</h5>
+            <button class="btn btn-warning" type="button" data-toggle="modal" data-target="#streamModal">Oqim yaratish</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-6 col-12 market-wrapper-item">
+        <div class="card">
+          <a class="card-link" href="product-view.html">
+            <img alt="Card image" class="card-img-top" src="../img/product/product1.jpeg"/>
+          </a>
+          <div class="card-body">
+            <p class="card-text">Smartfon</p>
+            <h4 class="card-title">Samsung Galaxy S21 3/32GB white</h4>
+            <div class="reting">
+              <svg class="active" fill="#FFC107" height="16px" version="1.1" viewbox="0 12.705 512 486.59"
+                   width="16px" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" y="0px">
+                  <polygon
+                      points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 ">
+                  </polygon>
+              </svg>
+              <svg class="active" fill="#FFC107" height="16px" version="1.1" viewbox="0 12.705 512 486.59"
+                   width="16px" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" y="0px">
+                  <polygon
+                      points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 ">
+                  </polygon>
+              </svg>
+              <svg class="active" fill="#FFC107" height="16px" version="1.1" viewbox="0 12.705 512 486.59"
+                   width="16px" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" y="0px">
+                  <polygon
+                      points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 ">
+                  </polygon>
+              </svg>
+              <svg class="active" fill="#FFC107" height="16px" version="1.1" viewbox="0 12.705 512 486.59"
+                   width="16px" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" y="0px">
+                  <polygon
+                      points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 ">
+                  </polygon>
+              </svg>
+              <svg fill="#FFC107" height="16px" version="1.1" viewbox="0 12.705 512 486.59" width="16px" x="0px"
+                   xml:space="preserve" xmlns="http://www.w3.org/2000/svg" y="0px">
+                  <polygon
+                      points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 ">
+                  </polygon>
+              </svg>
+            </div>
+            <p class="old-price" style="text-decoration: line-through;">2 999 000 so'm</p>
+            <h5 class="new-price">2 499 000 so'm</h5>
+            <button class="btn btn-warning" type="button" data-toggle="modal" data-target="#streamModal">Oqim yaratish</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-6 col-12 market-wrapper-item">
+        <div class="card">
+          <a class="card-link" href="product-view.html">
+            <img alt="Card image" class="card-img-top" src="../img/product/product1.jpeg"/>
+          </a>
+          <div class="card-body">
+            <p class="card-text">Smartfon</p>
+            <h4 class="card-title">Samsung Galaxy S21 3/32GB white</h4>
+            <div class="reting">
+              <svg class="active" fill="#FFC107" height="16px" version="1.1" viewbox="0 12.705 512 486.59"
+                   width="16px" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" y="0px">
+                  <polygon
+                      points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 ">
+                  </polygon>
+              </svg>
+              <svg class="active" fill="#FFC107" height="16px" version="1.1" viewbox="0 12.705 512 486.59"
+                   width="16px" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" y="0px">
+                  <polygon
+                      points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 ">
+                  </polygon>
+              </svg>
+              <svg class="active" fill="#FFC107" height="16px" version="1.1" viewbox="0 12.705 512 486.59"
+                   width="16px" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" y="0px">
+                  <polygon
+                      points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 ">
+                  </polygon>
+              </svg>
+              <svg class="active" fill="#FFC107" height="16px" version="1.1" viewbox="0 12.705 512 486.59"
+                   width="16px" x="0px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" y="0px">
+                  <polygon
+                      points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 ">
+                  </polygon>
+              </svg>
+              <svg fill="#FFC107" height="16px" version="1.1" viewbox="0 12.705 512 486.59" width="16px" x="0px"
+                   xml:space="preserve" xmlns="http://www.w3.org/2000/svg" y="0px">
+                  <polygon
+                      points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566 ">
+                  </polygon>
+              </svg>
+            </div>
+            <p class="old-price" style="text-decoration: line-through;">2 999 000 so'm</p>
+            <h5 class="new-price">2 499 000 so'm</h5>
+            <button class="btn btn-warning" type="button" data-toggle="modal" data-target="#streamModal">Oqim yaratish</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+<!-- Main-content-close -->
+
+<!--Jquery-->
+<script src="../js/jquery-slim.min.js"></script>
+<script src="../js/jquery-ui.min.js"></script>
+<!--Bootstrap-->
+<script src="../js/popover.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<!--Slick-product-->
+<script src="../js/slick.min.js"></script>
+<!--Swiper-->
+<script src="../js/swiper-bundle.min.js"></script>
+<!--Fancyapp-->
+<script src="../js/fancybox.umd.js"></script>
+<!--App-js-->
+<script src="../js/app.js"></script>
+
+<script>
+  $(document).ready(function() {
+    // Modal
+
+    // GLOBAL VARIABLES
+    const cardBtn = document.querySelectorAll("button[data-toggle='modal']");
+    let modal = document.querySelector(".modal"),
+    modalTitle = document.querySelector(".modal-header .modal-title"),
+    alertContent = document.querySelector(".modal-body #alert-content"),
+    modalInput = document.querySelector(".modal-body .form-control"),
+    modalBtn = document.querySelector(".modal-footer .btn"),
+    modalBtnText = document.querySelector(".modal-btn-text");
+
+    
+
+    // FUNCTIONS RUN
+
+    // modal-show-inner
+    modalBtn.addEventListener("click", linkerDone);
+
+    // FUNCTIONS
+    // modal-show
+    $(cardBtn).click(function(){
+      modal.classList.remove("linker-done");
+      modalInput.removeAttribute("readonly");
+      let title = $(this).parent(".card-body").find(".card-title");
+      modalTitle.innerText = title;
+      modalInput.value = "";
+    });
+    // modal-show-inner
+    let linker = false;
+    function linkerDone(e) {
+      e.preventDefault();
+      if(!linker) {
+        linkerDoneSuc();
+      }else {
+        modalBtnText.innerText = "Nusxa olindi";
+        copyToClipboard(modalInput);
+      }
+    }
+    function linkerDoneSuc() {
+      if(modalInput.value!="") {
+        modalLoad();
+        let val = modalInput.value;
+        modalTitle.innerText = val;
+        modal.classList.add("linker-done");
+        modalBtnText.innerText = "Nusxa olish";
+        modalInput.setAttribute("readonly", "");
+        setTimeout(()=>modalLoad(),1000);
+        linker = true;
+      }
+    }
+
+    // modal-load-toggle-show
+    function modalLoad() {
+      modal.classList.toggle("load");
+    }
+    
+    function copyToClipboard() {
+      let input = modalInput;
+      input.select();
+      document.execCommand("copy");
+    }
+
+  });
+</script>
+
+</body>
+
+</html>

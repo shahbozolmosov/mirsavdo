@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8"/>
+  <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <!--Favicon-->
+  <link rel="shortcut icon" href="../favicon.png" type="image/x-icon"/>
+  <!-- Font awesome 5 -->
+  <link href="../css/all.min.css" rel="stylesheet"/>
+  <!-- Bootstrap4 -->
+  <link href="../css/bootstrap.min.css" rel="stylesheet"/>
+  <!--  Slick-slider-->
+  <link href="../css/slick.css" rel="stylesheet"/>
+  <link href="../css/slick-theme.css" rel="stylesheet"/>
+  <!--Swiper-->
+  <link href="../css/swiper-bundle.min.css" rel="stylesheet"/>
+  <!--Fancyapp-->
+  <link href="../css/fancybox.min.css" rel="stylesheet"/>
+  <!-- Main css -->
+  <link href="../css/main.css" rel="stylesheet"/>
+  <title>MirSavdo.uz</title>
+</head>
+
+<body class="profile-page">
+<!--Background-open-->
+<div class="background"></div>
+<!--Background-close-->
+
+<!-- Header-open -->
+<header>
+  <div class="container">
+    <div class="auto-content">
+      <nav class="navbar navbar-expand-sm bg-light">
+        <!-- logo-open -->
+        <div class="prev-box">
+          <a class="navbar-brand logo" href="index.html">
+            <img src="../img/logo.png"  alt="Logo">
+          </a>
+          <button class="btn history-prev">
+            <i class="fal fa-angle-left fa-2x"></i>
+          </button>
+        </div>
+        <!-- logo-close -->
+        <h3 class="mobile-title ml-auto">Asosiy</h3>
+        <a class="btn btn-warning categore-btn mr-md-3" data-target="#categore-modal" data-toggle="modal"
+          href="#categore">
+          <i class="fas fa-bars"></i>
+          <span class="btn-text"> Katalok </span>
+        </a>
+        <div class="input-group" id="search-input">
+          <!-- input search -->
+          <input class="form-control border-warning" placeholder="Nima izlaymiz" type="text" />
+          <div class="input-group-append">
+            <button class="btn btn-warning" type="button">
+              <i class="fal fa-search"></i>
+              <span class="btn-text"> Qidirish </span>
+            </button>
+          </div>
+        </div>
+        <!-- navbar-nav-open -->
+        <ul class="navbar-nav">
+          <li class="nav-item search-btn">
+            <button class="btn nav-link" href="#" id="search-btn">
+              <i class="fal fa-search"></i>
+              <span class="btn-text"> Qidirish </span>
+            </button>
+          </li>
+          <li class="nav-item home-btn">
+            <a class="nav-link" href="#">
+              <i class="fal fa-home"></i>
+              <span class="btn-text"> Home </span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link bookmark-basket" href="selected-product.html">
+              <i class="fal fa-bookmark"></i>
+              <span class="badge badge-pill count"> 0 </span>
+              <span class="btn-text"> Tanlangan </span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active select-basket" href="heart.html">
+              <i class="fal fa-heart"></i>
+              <span class="badge badge-pill count"> 0 </span>
+              <span class="btn-text"> Sevimli </span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <div class="dropdown">
+              <a href="#" class="nav-link" type="button dropdown-toggle" data-toggle="dropdown">
+                <i class="fal fa-user"></i>
+                <span class="btn-text"> Kirish </span>
+              </a>
+              <div class="dropdown-menu">
+                <a href="index.html" class="dropdown-item"><i class="fal fa-user"></i>&nbsp;Profil</a>
+                <a href="register.html" class="dropdown-item"><i class="fal fa-user-plus"></i>&nbsp;Ro'yxatdan
+                  o'tish</a>
+                <a href="admin/index.html" class="dropdown-item"><span class="fal fa-users"></span>&nbsp;Admin
+                  uchun</a>
+                <a href="settings.html" class="dropdown-item"><span
+                    class="fal fa-cog"></span>&nbsp;Sozlamalar</a>
+              </div>
+              <div class="drop-overlay"></div>
+            </div>
+          </li>
+        </ul>
+        <!-- navbar-nav-close -->
+      </nav>
+    </div>
+    <!-- Large-menu-open -->
+    <div class="large-menu">
+      <div class="large-menu-inner">
+        <aside>
+          <ul class="nav nav-pills">
+            <li class="nav-item">
+              <a class="categore-navbar--link active show" data-toggle="pill" href="#categore_1">
+                Smartfon, telifon, gadjet, aksessuarlar
+                <i class="fas fa-angle-right"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="categore-navbar--link" data-toggle="pill" href="#categore_2">
+                Noutbook, printer, kompyuter
+                <i class="fas fa-angle-right"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="categore-navbar--link" data-toggle="pill" href="#categore_3">
+                Oshxona texnika
+                <i class="fas fa-angle-right"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="categore-navbar--link" data-toggle="pill" href="#categore_4">
+                Bolalar uchun o'yinchoq va mahsulotlar
+                <i class="fas fa-angle-right"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="categore-navbar--link" data-toggle="pill" href="#categore_5">
+                Kitoblar
+                <i class="fas fa-angle-right"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="categore-navbar--link" data-toggle="pill" href="#categore_6">
+                Sport anjomlari
+                <i class="fas fa-angle-right"></i>
+              </a>
+            </li>
+          </ul>
+        </aside>
+        <!-- Tab-content -->
+        <div class="tab-content">
+          <div class="tab-pane active open" id="categore_1">
+            <button class="btn btn-warning collapsed" data-toggle="collapse" data-target="#one">
+              Smartfon, telifon, gadjet, aksessuarlar
+              <span class="btn-angle">
+                <i class="fal fa-angle-up"></i>
+              </span>
+            </button>
+            <div id="one" class="collapse">
+              <div class="tab-pane-wrapper">
+                <ul class="nav">
+                  <!-- Tab-item -->
+                  <li class="nav-item">
+                    <a href="#">
+                      <h5 class="tab-pane-title">Smartfon</h5>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#"> Apple </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#"> Samsung </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#"> Huawei </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#"> Nokia </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#"> Xiaome </a>
+                  </li>
+                  <hr class="line" />
+                </ul>
+                <!-- Tab-item -->
+                <ul class="nav">
+                  <li class="nav-item">
+                    <a href="#">
+                      <h5 class="tab-pane-title">Telifon</h5>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#"> Radiotelifon </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#"> Simli telifon </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#"> Ratsiya </a>
+                  </li>
+                  <hr class="line" />
+                </ul>
+                <!-- Tab-item -->
+                <ul class="nav">
+                  <li class="nav-item">
+                    <a href="#">
+                      <h5 class="tab-pane-title">Tugmali telifonlar</h5>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#"> Nokia </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#"> INOI </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#"> Novey </a>
+                  </li>
+                  <hr class="line" />
+                </ul>
+                <!-- Tab-item  -->
+                <ul class="nav">
+                  <li class="nav-item">
+                    <a href="#">
+                      <h5 class="tab-pane-title">Aqilli Soatlar</h5>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#"> Samsung </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#"> Huawei </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#"> Nokia </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#"> Xiaome </a>
+                  </li>
+                </ul>
+                <ul class="nav">
+                  <li class="nav-item">
+                    <a href="#">
+                      <h5 class="tab-pane-title">Aqilli Soatlar</h5>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#"> Samsung </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#"> Huawei </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#"> Nokia </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#"> Xiaome </a>
+                  </li>
+                </ul>
+                <ul class="nav">
+                  <li class="nav-item">
+                    <a href="#">
+                      <h5 class="tab-pane-title">Aqilli Soatlar</h5>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#"> Samsung </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#"> Huawei </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#"> Nokia </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#"> Xiaome </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane" id="categore_2">
+            <button class="btn btn-warning collapsed" data-toggle="collapse" data-target="#two">
+              Noutbook, printer, kompyuter
+              <span class="btn-angle">
+                <i class="fal fa-angle-up"></i>
+              </span>
+            </button>
+            <div id="two" class="collapse">
+              <div class="tab-pane-wrapper">
+                <ul class="nav">
+                  <!-- Tab-item -->
+                  <li class="nav-item">
+                    <a href="#">
+                      <h5 class="tab-pane-title">2</h5>
+                    </a>
+                  </li>
+                  <hr class="line" />
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane" id="categore_3">
+            <button class="btn btn-warning collapsed" data-toggle="collapse" data-target="#three">
+              Smartfon, telifon, gadjet, aksessuarlar
+              <span class="btn-angle">
+                <i class="fal fa-angle-up"></i>
+              </span>
+            </button>
+            <div id="three" class="collapse">
+              <div class="tab-pane-wrapper">
+                <ul class="nav">
+                  <!-- Tab-item -->
+                  <li class="nav-item">
+                    <a href="#">
+                      <h5 class="tab-pane-title">3</h5>
+                    </a>
+                  </li>
+                  <hr class="line" />
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane" id="categore_4">
+            <button class="btn btn-warning collapsed" data-toggle="collapse" data-target="#four">
+              Bolalar uchun o'yinchoq va mahsulotlar
+              <span class="btn-angle">
+                <i class="fal fa-angle-up"></i>
+              </span>
+            </button>
+            <div id="four" class="collapse">
+              <div class="tab-pane-wrapper">
+                <ul class="nav">
+                  <!-- Tab-item -->
+                  <li class="nav-item">
+                    <a href="#">
+                      <h5 class="tab-pane-title">4</h5>
+                    </a>
+                  </li>
+                  <hr class="line" />
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane" id="categore_5">
+            <button class="btn btn-warning collapsed" data-toggle="collapse" data-target="#five">
+              Kitoblar
+              <span class="btn-angle">
+                <i class="fal fa-angle-up"></i>
+              </span>
+            </button>
+            <div id="five" class="collapse">
+              <div class="tab-pane-wrapper">
+                <ul class="nav">
+                  <!-- Tab-item -->
+                  <li class="nav-item">
+                    <a href="#">
+                      <h5 class="tab-pane-title">5</h5>
+                    </a>
+                  </li>
+                  <hr class="line" />
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane" id="categore_6">
+            <button class="btn btn-warning collapsed" data-toggle="collapse" data-target="#six">
+              Sport anjomlari
+              <span class="btn-angle">
+                <i class="fal fa-angle-up"></i>
+              </span>
+            </button>
+            <div id="six" class="collapse">
+              <div class="tab-pane-wrapper">
+                <ul class="nav">
+                  <!-- Tab-item -->
+                  <li class="nav-item">
+                    <a href="#">
+                      <h5 class="tab-pane-title">6</h5>
+                    </a>
+                  </li>
+                  <hr class="line" />
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Large-menu-close -->
+    <div class="categore-slider">
+      <ul class="nav wrapper-nav slider slider-head">
+        <li class="nav-item">
+          <a class="nav-link" href="#"> Samsung </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"> Xiaome </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"> Telifon </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"> Oshxona jihozlari </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"> Noutbook </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"> Kompyuter </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"> Aksisuarlar </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"> Uy jihozlari </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"> Aqilli soatlar </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"> Bolalar kiyimlari </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</header>
+<!-- Header-close -->
+
+<!-- Main-content-open -->
+<main>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 offset-md-2 profile-main--inner">
+        <div class="profile-main--header">
+          <h3 class="order-title">Tanlanganlar</h3>
+        </div>
+        <div class="profile-main--body">
+          <!--Bu elementlarni ko'rinishi yoki ko'rinmasligi uchun "show" class si qo'shing yoki olib tashlang-->
+          <div class="history-selected">
+            <i class="fas fa-history fa-5x my-3"></i>
+            <h3>
+              Sizda tanlanganlar mavjud emas
+            </h3>
+          </div>
+          <div class="table-content show">
+            <table class="table table-responsive-lg table-hover">
+              <tr>
+                <th>№</th>
+                <th>Nomi</th>
+                <th>Rasmi</th>
+                <th>Chegirma</th>
+                <th>Narxi</th>
+                <th>Tanlangan sanasi</th>
+                <th>Sotib olish</th>
+              </tr>
+
+              <tr>
+                <td>1</td>
+                <td>Samsung Galaxy S21</td>
+                <td class="table-img">
+                  <a href="../img/product/phone1.jfif" data-fancybox="gallery">
+                    <img src="../img/product/phone1.jfif" alt="Samsung Galaxy S21" width="20">
+                  </a>
+                </td>
+                <td>0 so'm</td>
+                <td>2,499,000 so'm</td>
+                <td>26.08.2021</td>
+                <td>
+                  <a class="text-info" href="../product-view.html" target="_blank">URL <i class="fal fa-external-link"></i></a>
+                </td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>Samsung Galaxy S21</td>
+                <td class="table-img">
+                  <a href="../img/product/phone1.jfif" data-fancybox="gallery">
+                    <img src="../img/product/phone1.jfif" alt="Samsung Galaxy S21" width="20">
+                  </a>
+                </td>
+                <td>0 so'm</td>
+                <td>2,499,000 so'm</td>
+                <td>26.08.2021</td>
+                <td>
+                  <a class="text-danger" href="#">Sotib olingan <i class="fal fa-check text-success"></i></a>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+<!-- Main-content-close -->
+
+<!-- Site-footer-open -->
+<footer>
+  <div class="container">
+    <div class="row site-footer-wrapper py-5 px-2">
+      <div class="col-md-4 mb-3">
+        <a class="logo" href="../index.html">
+          <img src="../img/logo.png"  alt="Logo">
+        </a>
+        <p>FastSale store © 2021 barcha huquqlar himoyalangan</p>
+      </div>
+      <div class="col-md-4 mb-3">
+        <ul class="nav">
+          <li class="nav-item">
+            <a href="#"> Shaxsiy ma'lumotlar bilan ishlash </a>
+          </li>
+          <li class="nav-item">
+            <a href="#"> Yordam </a>
+          </li>
+          <li class="nav-item">
+            <a href="#"> Mo'ddatli to'lov shartlari </a>
+          </li>
+          <li class="nav-item">
+            <a href="#"> Biz haqimizda </a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <div class="call">
+          <h5>Ishonch raqami</h5>
+          <h4>+998(99)735-78-19</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- Site-footer-close -->
+<div class="overlay" style="display: none;"></div>
+
+<!--Jquery-->
+<script src="../js/jquery-slim.min.js"></script>
+<script src="../js/jquery-ui.min.js"></script>
+<!--Bootstrap-->
+<script src="../js/popover.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<!--Slick-product-->
+<script src="../js/slick.min.js"></script>
+<!--Swiper-->
+<script src="../js/swiper-bundle.min.js"></script>
+<!--Fancyapp-->
+<script src="../js/fancybox.umd.js"></script>
+<!--App-js-->
+<script src="../js/app.js"></script>
+</body>
+
+</html>
